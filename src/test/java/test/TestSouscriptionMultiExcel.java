@@ -25,8 +25,9 @@ import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -68,7 +69,7 @@ public class TestSouscriptionMultiExcel {
 	@Before
 	public void setUp() throws Exception {
 		
-		 driver = this.getDriver(DriverType.INTERNETEXPLORER);
+		 driver = this.getDriver(DriverType.CHROME);
 		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
@@ -91,22 +92,36 @@ public class TestSouscriptionMultiExcel {
 		switch(driverType){
 			case FIREFOX:
 				 System.setProperty("webdriver.gecko.driver",  System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-				 capabilities=DesiredCapabilities.firefox();
-				 capabilities.setCapability("marionette", false);
-			     _Driver = new FirefoxDriver(capabilities);
+				 //capabilities=DesiredCapabilities.firefox();
+				 //capabilities.setCapability("marionette", false);
+			     //_Driver = new FirefoxDriver(capabilities);
+			     FirefoxBinary firefoxBinary = new FirefoxBinary();
+			     firefoxBinary.addCommandLineOptions("--headless");
+			     FirefoxOptions firefoxOptions = new FirefoxOptions();
+			     firefoxOptions.addArguments("--headless");
+			     firefoxOptions.setBinary(firefoxBinary);
+			     _Driver = new FirefoxDriver(firefoxOptions);
 			  
 			     break;
 			case CHROME:
 				 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\chromedriver_win32\\chromedriver.exe");
 				 ChromeOptions options = new ChromeOptions();
+				 options.addArguments("--headless");
 				 options.addArguments("--start-maximized");
 				 _Driver = new ChromeDriver(options);
 				 break;	
 			case INTERNETEXPLORER:
-				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\IEDriverServer_x64_3.8.0\\IEDriverServer.exe");
+				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
+						 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_x64_3.8.0\\IEDriverServer.exe");
+				 
+				 //System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
+				//		 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_Win32_3.8.0\\IEDriverServer.exe");
 				 DesiredCapabilities capabilities=DesiredCapabilities.internetExplorer();
+				 capabilities.setCapability(InternetExplorerDriver.
+						 INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+				 capabilities.setVersion("9");
 			     _Driver = new InternetExplorerDriver(capabilities);
-			   
+			    
 			     break;
 		}
 		   
@@ -146,12 +161,12 @@ public class TestSouscriptionMultiExcel {
 					  }
 					  
 				  }
-				  /*catch(Exception ex){
+				  catch(Exception ex){
 					  LOGGER.log(Level.SEVERE, ex.getClass().getName()+ "   "+ex.getMessage());
 					  generateLog(ex);
 				  
 				  }
-				  */
+				  
 		  }
 		  }catch(IOException ex){
 			  generateLog(ex);
@@ -173,6 +188,7 @@ public class TestSouscriptionMultiExcel {
 
 	public void runSelenium(Map<String, String> resultSet) throws ParseException, InterruptedException, GUIException {
 		driver.get(BASE_URL + "/s/RCI_UK/");
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.linkText("KEY COVER"))));
 	    driver.findElement(By.linkText("KEY COVER")).click();
 	    if (driver.findElements(By.cssSelector("button.close-dialog.add-all-to-cart.dialog-cart-show")).size() > 0){
 	    	driver.findElement(By.cssSelector("button.close-dialog.add-all-to-cart.dialog-cart-show")).click();
@@ -189,7 +205,16 @@ public class TestSouscriptionMultiExcel {
 	    	enterUserInfo(driver, resultSet);
 	    }
 	   
-	    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]"))).click();
+	    //wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]"))).click();
+	    new FluentWait<WebDriver>(driver)
+	    .withTimeout(60, TimeUnit.SECONDS)
+	    .pollingEvery(2, TimeUnit.MILLISECONDS)
+	    .ignoring(WebDriverException.class)
+	    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]")));
+	   
+	    WebElement billingSaveElment = driver.findElement(By.cssSelector("button[name=\"dwfrm_billing_save\"]"));
+		jse2.executeScript("arguments[0].click()", billingSaveElment); 
+	   // driver.findElement(By.cssSelector("button[name=\"dwfrm_billing_save\"]")).click();
 	    getSouscription(driver, resultSet);
 
 	    makePayment(driver, resultSet);
