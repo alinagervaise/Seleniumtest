@@ -1,0 +1,2 @@
+janv. 02, 2018 2:26:04 PM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: Expected condition failed: waiting for visibility of element located by By.xpath: //form[@id='checkout-form']/fieldset/button)[2] (tried for 120 second(s) with 2 MILLISECONDS interval)

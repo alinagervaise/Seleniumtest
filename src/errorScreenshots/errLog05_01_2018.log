@@ -1,0 +1,82 @@
+janv. 05, 2018 3:37:13 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 3:50:01 PM test.TestSouscriptionMultiExcel0 testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 3:52:32 PM test.TestSouscriptionMultiExcel0 testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 3:55:14 PM test.TestSouscriptionMultiExcel0 testCaseSouscriptionUserExist
+AVERTISSEMENT: 05-11-2017The beneficiary must be more than 18 years old.The beneficiary must be more than 18 years old.
+janv. 05, 2018 3:55:17 PM test.TestSouscriptionMultiExcel0 testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Jean , Postal Code=SW1A 2AA, Card number=4917610000000000, confirm password=JSK-man?, City=London, phone number=448006891001, Security number=345, lastname=Renaud, Brand=Audi, password=JSK-man?, Property number / Name=33, Vehicle Insurance Date=dim., 02 05 00:00:00 2017, Expiry date=sam., 08 01 00:00:00 2020, Registration=BJ82 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=WBAWR3C55AP462424, date of birth=mer., 03 02 00:00:00 1955, email=jeanrenauld@mailinator.com}
+
+janv. 05, 2018 3:59:19 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:01:28 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:04:40 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:09:40 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:16:20 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:17:24 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:19:51 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:21:39 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:23:24 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:26:19 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 4:27:11 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 5:03:52 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 5:04:52 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 5:05:35 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 5:32:36 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=dim., 11 05 00:00:00 2017, email=robertlavoisier@mailinator.com}
+
+janv. 05, 2018 5:34:09 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
