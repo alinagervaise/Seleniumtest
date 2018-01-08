@@ -68,7 +68,7 @@ public class TestSouscriptionMultiExcel {
 	@Before
 	public void setUp() throws Exception {
 		
-		 driver = this.getDriver(DriverType.FIREFOX);
+		 driver = this.getDriver(DriverType.INTERNETEXPLORER);
 		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
@@ -103,7 +103,7 @@ public class TestSouscriptionMultiExcel {
 				 _Driver = new ChromeDriver(options);
 				 break;	
 			case INTERNETEXPLORER:
-				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\geckodriver-v0.19.1-win64\\geckodriver.exe");
+				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\IEDriverServer_x64_3.8.0\\IEDriverServer.exe");
 				 DesiredCapabilities capabilities=DesiredCapabilities.internetExplorer();
 			     _Driver = new InternetExplorerDriver(capabilities);
 			   

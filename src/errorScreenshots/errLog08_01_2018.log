@@ -2,3 +2,7 @@ janv. 08, 2018 9:52:00 AM test.TestSouscriptionMultiExcel testCaseSouscriptionUs
 INFOS: Execute Souscription for :
 {firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
 
+janv. 08, 2018 11:14:54 AM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
