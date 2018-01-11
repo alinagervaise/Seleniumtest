@@ -69,8 +69,9 @@ public class TestSouscriptionMultiExcel {
 	@Before
 	public void setUp() throws Exception {
 		
-		 driver = this.getDriver(DriverType.CHROME);
-		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		 driver = this.getDriver(DriverType.FIREFOX);
+		 //driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
@@ -92,15 +93,15 @@ public class TestSouscriptionMultiExcel {
 		switch(driverType){
 			case FIREFOX:
 				 System.setProperty("webdriver.gecko.driver",  System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-				 //capabilities=DesiredCapabilities.firefox();
-				 //capabilities.setCapability("marionette", false);
-			     //_Driver = new FirefoxDriver(capabilities);
-			     FirefoxBinary firefoxBinary = new FirefoxBinary();
-			     firefoxBinary.addCommandLineOptions("--headless");
-			     FirefoxOptions firefoxOptions = new FirefoxOptions();
-			     firefoxOptions.addArguments("--headless");
-			     firefoxOptions.setBinary(firefoxBinary);
-			     _Driver = new FirefoxDriver(firefoxOptions);
+				 capabilities=DesiredCapabilities.firefox();
+				 capabilities.setCapability("marionette", false);
+			     _Driver = new FirefoxDriver(capabilities);
+			     //FirefoxBinary firefoxBinary = new FirefoxBinary();
+			     //firefoxBinary.addCommandLineOptions("--headless");
+			     //FirefoxOptions firefoxOptions = new FirefoxOptions();
+			     //firefoxOptions.addArguments("--headless");
+			     //firefoxOptions.setBinary(firefoxBinary);
+			     //_Driver = new FirefoxDriver(firefoxOptions);
 			  
 			     break;
 			case CHROME:
@@ -111,15 +112,15 @@ public class TestSouscriptionMultiExcel {
 				 _Driver = new ChromeDriver(options);
 				 break;	
 			case INTERNETEXPLORER:
-				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
-						 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_x64_3.8.0\\IEDriverServer.exe");
+				// System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
+				//		 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_x64_3.8.0\\IEDriverServer.exe");
 				 
-				 //System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
-				//		 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_Win32_3.8.0\\IEDriverServer.exe");
+				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
+						 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_Win32_3.8.0\\IEDriverServer.exe");
 				 DesiredCapabilities capabilities=DesiredCapabilities.internetExplorer();
 				 capabilities.setCapability(InternetExplorerDriver.
 						 INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-				 capabilities.setVersion("9");
+				 capabilities.setVersion("11");
 			     _Driver = new InternetExplorerDriver(capabilities);
 			    
 			     break;
@@ -188,12 +189,16 @@ public class TestSouscriptionMultiExcel {
 
 	public void runSelenium(Map<String, String> resultSet) throws ParseException, InterruptedException, GUIException {
 		driver.get(BASE_URL + "/s/RCI_UK/");
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.linkText("KEY COVER"))));
+		//wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.linkText("KEY COVER"))));
+	    //driver.findElement(By.linkText("KEY COVER")).click();
+		driver.findElement(By.cssSelector("ul.menu-category.level-1 li:nth-of-type(2) a")).click();
 	    driver.findElement(By.linkText("KEY COVER")).click();
 	    if (driver.findElements(By.cssSelector("button.close-dialog.add-all-to-cart.dialog-cart-show")).size() > 0){
 	    	driver.findElement(By.cssSelector("button.close-dialog.add-all-to-cart.dialog-cart-show")).click();
 	    }
-	    driver.findElement(By.cssSelector("button.add-all-to-cart.product-0")).click();
+	    else{
+	    	driver.findElement(By.cssSelector("button.add-all-to-cart.product-0")).click();
+	    }
 	    driver.findElement(By.cssSelector("a.action.dialog-cart-show")).click();
 	    driver.findElement(By.xpath("(//form[@id='checkout-form']/fieldset/button)[2]")).click();
 	    
@@ -206,15 +211,16 @@ public class TestSouscriptionMultiExcel {
 	    }
 	   
 	    //wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]"))).click();
-	    new FluentWait<WebDriver>(driver)
+	   
+	    WebElement billingSaveElment = driver.findElement(By.cssSelector("button[name=\"dwfrm_billing_save\"]"));
+		jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
+		new FluentWait<WebDriver>(driver)
 	    .withTimeout(60, TimeUnit.SECONDS)
 	    .pollingEvery(2, TimeUnit.MILLISECONDS)
 	    .ignoring(WebDriverException.class)
 	    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]")));
 	   
-	    WebElement billingSaveElment = driver.findElement(By.cssSelector("button[name=\"dwfrm_billing_save\"]"));
-		jse2.executeScript("arguments[0].click()", billingSaveElment); 
-	   // driver.findElement(By.cssSelector("button[name=\"dwfrm_billing_save\"]")).click();
+		billingSaveElment.click();
 	    getSouscription(driver, resultSet);
 
 	    makePayment(driver, resultSet);
@@ -246,15 +252,27 @@ public class TestSouscriptionMultiExcel {
 	
 	}
 	private void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
-	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).clear();
-	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).sendKeys(resultSet.get("VIN"));
-	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate")).clear();
-	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate")).sendKeys(resultSet.get("Registration"));
+	    /*
+		 new FluentWait<WebDriver>(driver)
+		    .withTimeout(60, TimeUnit.SECONDS)
+		    .pollingEvery(2, TimeUnit.MILLISECONDS)
+		    .ignoring(WebDriverException.class)
+		    .until(ExpectedConditions.presenceOfElementLocated(By.id("dwfrm_billing_subscriptionInformation_vin")));
+		    driver.findElement(By.linkText("MY ACCOUNT")).click();
+		
+		WebElement vinElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin"));
+	    jse2.executeScript("arguments[0].scrollIntoView()", vinElement); 
+		vinElement.clear();
+	    vinElement.sendKeys(resultSet.get("VIN"));
+	    */
+	    WebElement plateElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate"));
+	    jse2.executeScript("arguments[0].scrollIntoView()", plateElement); 
+	    plateElement.clear();
+	    plateElement.sendKeys(resultSet.get("Registration"));
 	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInfoBrand"))).selectByVisibleText(resultSet.get("Brand").toUpperCase());
 	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInfoModel"))).selectByVisibleText(resultSet.get("Model"));
 	    
-	  
-	  
+	
 	    
 	    String strCarDate = resultSet.get("Vehicle Insurance Date");
 		Date dateVehicle =  sf.parse(strCarDate);
@@ -267,9 +285,17 @@ public class TestSouscriptionMultiExcel {
 	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
 	    driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
 	    
-	    WebElement agreeTermsElment = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_agreeTerms"));
-		jse2.executeScript("arguments[0].scrollIntoView()", agreeTermsElment); 
+	   
+		 
 		
+		WebElement agreeTermsElment = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_agreeTerms")); 
+		jse2.executeScript("arguments[0].scrollIntoView()", agreeTermsElment);
+		 new FluentWait<WebDriver>(driver)
+		    .withTimeout(300, TimeUnit.SECONDS)
+		    .pollingEvery(2, TimeUnit.MILLISECONDS)
+		    .ignoring(WebDriverException.class)
+		    .until(ExpectedConditions.elementToBeClickable(By.id("dwfrm_billing_subscriptionInformation_agreeTerms")));
+	
 		agreeTermsElment.click();
 		 logError(driver);
 	}
@@ -309,7 +335,11 @@ public class TestSouscriptionMultiExcel {
 		
 	    driver.findElement(By.id("securityCode")).clear();
 	    driver.findElement(By.id("securityCode")).sendKeys(resultSet.get("Security number"));
-	    driver.findElement(By.id("submitButton")).click();
+	    
+	    WebElement submitElement = driver.findElement(By.id("submitButton"));
+	    jse2.executeScript("arguments[0].scrollIntoView()", submitElement); 
+	    submitElement.click();
+	    //driver.findElement(By.id("submitButton")).click();
 	    logError(driver);
 	    
 	}
@@ -361,7 +391,7 @@ public class TestSouscriptionMultiExcel {
 		 	// System.out.println("date of birth"+strCarDate);
 		    WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
 		    //JavascriptExecutor jse2 = (JavascriptExecutor)driver;
-			//jse2.executeScript("arguments[0].scrollIntoView()", datepicker);
+			jse2.executeScript("arguments[0].scrollIntoView()", datepicker);
 		    datepicker.click();
 		    
 		    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
@@ -375,9 +405,13 @@ public class TestSouscriptionMultiExcel {
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address1")).clear();
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address1")).sendKeys(resultSet.get("Property number / Name"));
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address2")).clear();
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address2")).sendKeys(resultSet.get("Street"));
+		    WebElement streetElement = driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address2"));
+		    jse2.executeScript("arguments[0].scrollIntoView()", streetElement);
+		    streetElement.sendKeys(resultSet.get("Street"));
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_postal")).clear();
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_postal")).sendKeys(resultSet.get("Postal Code"));
+		    WebElement postalCodeElement = driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_postal"));
+		    jse2.executeScript("arguments[0].scrollIntoView()", postalCodeElement);
+		    postalCodeElement.sendKeys(resultSet.get("Postal Code"));
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_city")).clear();
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_city")).sendKeys(resultSet.get("City"));
 		    

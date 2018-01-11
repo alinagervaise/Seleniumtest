@@ -1,2 +1,0 @@
-janv. 02, 2018 3:29:03 PM test.TestSouscriptionMultiExcelFantome generateLog
-GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //form[@id='checkout-form']/fieldset/button (tried for 120 second(s) with 2 MILLISECONDS interval)
