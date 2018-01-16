@@ -19,7 +19,7 @@ public class Loader {
 	public List<Reader> getReader(){
 		return readers;
 	}
-	public  List<Map<String, String>>  read (String inputFolder){
+	public  List<Map<String, String>>  read (String inputFolder, Country country){
 		List<Map<String, String>>  result = new ArrayList<Map<String, String>>();
 		File file = new File(inputFolder);
 		if (file.isDirectory()){
@@ -30,13 +30,13 @@ public class Loader {
 				//System.out.println("absolutePath---------------"+absolutePath);
 				if (name.length == 2){
 					String extension = Arrays.asList(name).get(1);
-					result.addAll(readerHelper(absolutePath, basename, extension));
+					result.addAll(readerHelper(absolutePath, basename, extension, country));
 				}
 			}
 		}
 		return result;
 	}
-	public  List<Map<String, String>>  readFile (String filename){
+	public  List<Map<String, String>>  readFile (String filename, Country country){
 		List<Map<String, String>>  result = new ArrayList<Map<String, String>>();
 		File file = new File(filename);
 		if (file.isFile()){
@@ -46,19 +46,20 @@ public class Loader {
 		    //System.out.println("absolutePath---------------"+absolutePath);
 			if (name.length == 2){
 				String extension = Arrays.asList(name).get(1);
-				result.addAll(readerHelper(absolutePath, basename, extension));
+				result.addAll(readerHelper(absolutePath, basename, extension, country));
 			}
 		}
 		return result;
 	}
 
-	private List<Map<String, String>> readerHelper(String filePath, String fileName, String extension) {
+	private List<Map<String, String>> readerHelper(String filePath, String fileName,
+			String extension, Country country) {
 		List<Map<String, String>>  result = new ArrayList<Map<String, String>>();
 		// TODO Auto-generated method stub
 		for (Reader r : readers){
 		    if (r.hasExtension(extension)){
 		    	try {
-					 result.addAll( r.read(filePath));
+					 result.addAll( r.read(filePath, country));
 					return result;
 				
 				} catch (IOException e) {

@@ -37,6 +37,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
 
+import staging.rcibsp.Country;
 import staging.rcibsp.ExcelReader;
 import staging.rcibsp.GUIException;
 import staging.rcibsp.Loader;
@@ -46,7 +47,7 @@ import staging.rcibsp.Loader;
  * @author galinabikoro
  *
  */
-public class TestSouscriptionMultiExcel {
+public class TestSouscriptionUKMultiExcel {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private final String BASE_URL = "https://staging-store-rcibsp.demandware.net";
@@ -56,7 +57,7 @@ public class TestSouscriptionMultiExcel {
 	private Calendar c;
 	private JavascriptExecutor jse2;
 	private DesiredCapabilities capabilities;
-	 public static Logger LOGGER = Logger.getLogger(TestSouscriptionMultiExcel.class.getName());  
+	 public static Logger LOGGER = Logger.getLogger(TestSouscriptionUKMultiExcel.class.getName());  
 	 public FileHandler fileHandler;  
 	 String errorMessage = "";
 	/**
@@ -139,7 +140,7 @@ public class TestSouscriptionMultiExcel {
 			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeudetestFormated.xlsx";
 			  Loader loader = new Loader();
 			  loader.setReader(new ExcelReader());
-			  List<Map<String, String>> result = loader.readFile(filePath);
+			  List<Map<String, String>> result = loader.readFile(filePath, Country.UK);
 			  
 			  for (Map m : result){
 				  errorMessage = "";

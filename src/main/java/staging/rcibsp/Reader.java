@@ -6,6 +6,6 @@ import java.util.Map;
 
 public interface Reader {
 	public boolean hasExtension(String extension);
-	public List<Map<String, String>> read(String filePath) throws IOException;
+	public List<Map<String, String>> read(String filePath, Country country) throws IOException;
 	
 }

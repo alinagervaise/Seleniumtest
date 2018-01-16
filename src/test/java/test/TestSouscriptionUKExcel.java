@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import staging.rcibsp.Country;
 import staging.rcibsp.ExcelReader;
 
 
@@ -33,7 +34,7 @@ import staging.rcibsp.ExcelReader;
  * @author galinabikoro
  *
  */
-public class TestSouscriptionExcel {
+public class TestSouscriptionUKExcel {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private final String BASE_URL = "https://staging-store-rcibsp.demandware.net";
@@ -87,7 +88,7 @@ public class TestSouscriptionExcel {
 		  
 		  ExcelReader objExcelFile = new ExcelReader();
 		  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeudetestFormated.xlsx";
-		  List<Map<String, String>> result = objExcelFile.read(filePath);
+		  List<Map<String, String>> result = objExcelFile.read(filePath, Country.UK);
 		  for (Map m : result){
 			  if (m.isEmpty()){
 				  continue;
