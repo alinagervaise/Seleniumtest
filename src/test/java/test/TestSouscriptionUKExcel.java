@@ -87,7 +87,7 @@ public class TestSouscriptionUKExcel {
 	  public void testCaseSouscriptionUserExist() throws Exception {
 		  
 		  ExcelReader objExcelFile = new ExcelReader();
-		  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeudetestFormated.xlsx";
+		  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_UK.xlsx";
 		  List<Map<String, String>> result = objExcelFile.read(filePath, Country.UK);
 		  for (Map m : result){
 			  if (m.isEmpty()){

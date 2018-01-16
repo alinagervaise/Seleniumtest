@@ -127,7 +127,7 @@ public class TestSouscriptionDEMultiExcel {
 	  public void testCaseSouscriptionUserExist() throws IOException,ParseException, InterruptedException {
 		  try{
 			  ExcelReader objExcelFile = new ExcelReader();
-			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_allemagne.xlsx";
+			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_DE.xlsx";
 			  Loader loader = new Loader();
 			  loader.setReader(new ExcelReader());
 			  List<Map<String, String>> result = loader.readFile(filePath, Country.DE);
