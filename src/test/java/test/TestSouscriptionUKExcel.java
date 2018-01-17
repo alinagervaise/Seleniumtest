@@ -23,6 +23,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -54,7 +55,7 @@ public class TestSouscriptionUKExcel {
 	public void setUp() throws Exception {
 		
 		 driver = this.getDriver(DriverType.FIREFOX);
-		 driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
@@ -122,8 +123,13 @@ public class TestSouscriptionUKExcel {
 	    makePayment(driver, resultSet);
 		
 	    WebElement el = driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i"));
-	    
-	    wait.until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed"));
+
+
+	    new FluentWait<WebDriver>(driver)
+	    .withTimeout(3, TimeUnit.MINUTES)
+	    .pollingEvery(5, TimeUnit.SECONDS)
+	    .ignoring(WebDriverException.class)
+	    .until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed"));
 	    logout(driver, resultSet);
 	   
 	}
@@ -133,8 +139,8 @@ public class TestSouscriptionUKExcel {
 	
 	}
 	private void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException{
-	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).clear();
-	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).sendKeys(resultSet.get("VIN"));
+	    //driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).clear();
+	    //driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).sendKeys(resultSet.get("VIN"));
 	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate")).clear();
 	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate")).sendKeys(resultSet.get("Registration"));
 	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInfoBrand"))).selectByVisibleText(resultSet.get("Brand").toUpperCase());
@@ -156,10 +162,15 @@ public class TestSouscriptionUKExcel {
 	    
 	   
 	    
-	    WebElement agreeTermsElment = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_agreeTerms"));
+	    WebElement agreeTermsElment = driver.findElement(By.name("dwfrm_billing_subscriptionInformation_agreeTerms"));
 		jse2.executeScript("arguments[0].scrollIntoView()", agreeTermsElment); 
 		
 		
+		new FluentWait<WebDriver>(driver)
+	    .withTimeout(5, TimeUnit.MINUTES)
+	    .pollingEvery(5, TimeUnit.MILLISECONDS)
+	    .ignoring(WebDriverException.class)
+	    .until(ExpectedConditions.elementToBeClickable(agreeTermsElment));
 		agreeTermsElment.click();
 	}
 	private void makePayment(WebDriver driver, Map<String, String> resultSet) throws ParseException{
@@ -201,7 +212,10 @@ public class TestSouscriptionUKExcel {
 	    driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div[2]/div/input")).clear();
 
 	    driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div[2]/div/input")).sendKeys(resultSet.get("password").trim());
-	    driver.findElement(By.name("dwfrm_login_login")).click();
+	    
+	    WebElement loginElement =  driver.findElement(By.name("dwfrm_login_login"));
+	    jse2.executeScript("arguments[0].scrollIntoView()",loginElement);
+	    loginElement.click();
 	}
 
 	 /* @After
