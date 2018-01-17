@@ -71,7 +71,7 @@ public class TestSouscriptionDEMultiExcel {
 	public void setUp() throws Exception {
 		
 		 driver = this.getDriver(DriverType.FIREFOX);
-		 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
@@ -194,13 +194,13 @@ public class TestSouscriptionDEMultiExcel {
 	    WebElement billingSaveElment = driver.findElement(By.cssSelector("button[name=\"dwfrm_billing_save\"]"));
 		jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
 		new FluentWait<WebDriver>(driver)
-	    .withTimeout(60, TimeUnit.SECONDS)
-	    .pollingEvery(2, TimeUnit.MILLISECONDS)
+	    .withTimeout(6, TimeUnit.MINUTES)
+	    .pollingEvery(5, TimeUnit.SECONDS)
 	    .ignoring(WebDriverException.class)
-	    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]")));
+	    .until(ExpectedConditions.elementToBeClickable(billingSaveElment));
 	   
 		billingSaveElment.click();
-	    getSouscription(driver, resultSet);
+	    //getSouscription(driver, resultSet);
 
 	    makePayment(driver, resultSet);
 		
@@ -254,10 +254,19 @@ public class TestSouscriptionDEMultiExcel {
 	}
 	
 	public void selecProduct(WebDriver driver){
-		 driver.findElement(By.linkText("Securplus")).click();
+		
+		 //driver.findElement(By.linkText("Securplus")).click();
+		 driver.findElement(By.cssSelector("ul.menu-category.level-1 li:nth-of-type(2) a")).click();
 		 new Select(driver.findElement(By.id("va-billingFrequency"))).selectByVisibleText("Vierteljährlich");
 		 new Select(driver.findElement(By.id("va-termsDuration"))).selectByVisibleText("24 Monate");
-		 driver.findElement(By.cssSelector("button.add-all-to-cart.product-0")).click();
+		 WebElement addCartElement = driver.findElement(By.cssSelector("button.add-all-to-cart.product-0"));
+		 jse2.executeScript("arguments[0].scrollIntoView()", addCartElement); 
+			new FluentWait<WebDriver>(driver)
+		    .withTimeout(6, TimeUnit.MINUTES)
+		    .pollingEvery(2, TimeUnit.SECONDS)
+		    .ignoring(WebDriverException.class)
+		    .until(ExpectedConditions.elementToBeClickable(addCartElement));
+		 addCartElement.click();
 		 driver.findElement(By.cssSelector("#ui-id-1 > div.actions > a.action.dialog-cart-show")).click();
 		 driver.findElement(By.name("dwfrm_cart_checkoutCart")).click();
 		 
@@ -269,9 +278,9 @@ public class TestSouscriptionDEMultiExcel {
 		}
 	}
 	private void makePayment(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
-		WebElement billingSaveElment = driver.findElement(By.name("dwfrm_billing_save"));
-		jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
-		billingSaveElment.click();
+		//WebElement billingSaveElment = driver.findElement(By.name("dwfrm_billing_save"));
+		//jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
+		//billingSaveElment.click();
 		
 		
 	    //driver.findElement(By.id("is-WorldPay")).click();

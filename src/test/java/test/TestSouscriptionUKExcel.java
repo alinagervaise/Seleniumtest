@@ -20,6 +20,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -48,14 +49,15 @@ public class TestSouscriptionUKExcel {
 	 * @throws java.lang.Exception
 	 */
 	enum DriverType{
-		FIREFOX, CHROME
+		FIREFOX, CHROME, INTERNETEXPLORER
 	};
 
 	@Before
 	public void setUp() throws Exception {
 		
-		 driver = this.getDriver(DriverType.FIREFOX);
-		 driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
+		 driver = this.getDriver(DriverType.INTERNETEXPLORER);
+		 //driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+		 driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
@@ -70,7 +72,7 @@ public class TestSouscriptionUKExcel {
 				 DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 				 capabilities.setCapability("marionette", false);
 			     _Driver = new FirefoxDriver(capabilities);
-			     _Driver.manage().window().maximize();
+			    
 			     break;
 			case CHROME:
 				 System.setProperty("webdriver.chrome.driver",  System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\chromedriver_win32\\chromedriver.exe");
@@ -78,7 +80,24 @@ public class TestSouscriptionUKExcel {
 				 options.addArguments("--start-maximized");
 				 _Driver = new ChromeDriver(options);
 				 break;	
+			case INTERNETEXPLORER:
+				// System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
+				//		 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_x64_3.8.0\\IEDriverServer.exe");
+				 
+				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
+						 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_Win32_3.8.0\\IEDriverServer.exe");
+				 capabilities = DesiredCapabilities.internetExplorer();
+				 capabilities.setCapability(InternetExplorerDriver.
+						 INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+				 //capabilities.setVersion("11");
+				 //capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+				 //capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
+				 capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
+			     _Driver = new InternetExplorerDriver(capabilities);
+			    
+			     break;
 		}
+		 _Driver.manage().window().maximize();
 		return _Driver;
 	}
 	
@@ -104,7 +123,21 @@ public class TestSouscriptionUKExcel {
 
 	public void runSelenium(Map<String, String> resultSet) throws ParseException, InterruptedException {
 		driver.get(BASE_URL + "/s/RCI_UK/");
-	    driver.findElement(By.linkText("KEY COVER")).click();
+		
+	    //driver.findElement(By.linkText("KEY COVER")).click();
+		//By menuBy = By.cssSelector("ul.menu-category.level-1 li:nth-of-type(2) a");
+		//By menuBy = By.linkText("KEY COVER");
+		By menuBy =By.xpath("//nav[@id='navigation']/ul/li[2]/a");
+	    new FluentWait<WebDriver>(driver)
+	    .withTimeout(1, TimeUnit.MINUTES)
+	    .pollingEvery(5, TimeUnit.SECONDS)
+	    .ignoring(WebDriverException.class)
+	    .until(ExpectedConditions.and(
+	    		ExpectedConditions.visibilityOfElementLocated(menuBy),
+	    		ExpectedConditions.elementToBeClickable(menuBy)
+	    		));
+	    WebElement menuProductElement = driver.findElement(menuBy);
+	    menuProductElement.click();
 	    driver.findElement(By.cssSelector("button.add-all-to-cart.product-0")).click();
 	    driver.findElement(By.cssSelector("a.action.dialog-cart-show")).click();
 	    driver.findElement(By.xpath("(//form[@id='checkout-form']/fieldset/button)[2]")).click();
