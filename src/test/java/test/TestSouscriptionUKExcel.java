@@ -54,7 +54,7 @@ public class TestSouscriptionUKExcel {
 	public void setUp() throws Exception {
 		
 		 driver = this.getDriver(DriverType.FIREFOX);
-		 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
