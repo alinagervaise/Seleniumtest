@@ -80,7 +80,7 @@ public class TestSouscriptionUKMultiExcelFantome {
 		 //driver = this.getDriver(DriverType.FIREFOX, true);
 		 //driver = this.getDriver(DriverType.PHANTOMEJS, true);
 		 //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		 driver.manage().timeouts().implicitlyWait(600, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(6, TimeUnit.MINUTES);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
@@ -168,10 +168,10 @@ public class TestSouscriptionUKMultiExcelFantome {
 	  public void testCaseSouscriptionUserExist() throws Exception {
 		  try{
 			  ExcelReader objExcelFile = new ExcelReader();
-			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO";
+			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_UK.xlsx";
 			  Loader loader = new Loader();
 			  loader.setReader(new ExcelReader());
-			  List<Map<String, String>> result = loader.read(filePath, Country.UK);
+			  List<Map<String, String>> result = loader.readFile(filePath, Country.UK);
 			  
 			  for (Map m : result){
 				  if (m.isEmpty()){
@@ -317,8 +317,8 @@ public class TestSouscriptionUKMultiExcelFantome {
 	
 	}
 	private void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException{
-	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).clear();
-	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).sendKeys(resultSet.get("VIN"));
+	    //driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).clear();
+	    //driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin")).sendKeys(resultSet.get("VIN"));
 	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate")).clear();
 	    driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate")).sendKeys(resultSet.get("Registration"));
 	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInfoBrand"))).selectByVisibleText(resultSet.get("Brand").toUpperCase());
