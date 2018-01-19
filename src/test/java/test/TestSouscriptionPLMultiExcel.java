@@ -47,7 +47,7 @@ import staging.rcibsp.Loader;
  * @author galinabikoro
  *
  */
-public class TestSouscriptionUKMultiExcel {
+public class TestSouscriptionPLMultiExcel {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private final String BASE_URL = "https://staging-store-rcibsp.demandware.net";
@@ -57,7 +57,7 @@ public class TestSouscriptionUKMultiExcel {
 	private Calendar c;
 	private JavascriptExecutor jse2;
 	private DesiredCapabilities capabilities;
-	 public static Logger LOGGER = Logger.getLogger(TestSouscriptionUKMultiExcel.class.getName());  
+	 public static Logger LOGGER = Logger.getLogger(TestSouscriptionPLMultiExcel.class.getName());  
 	 public FileHandler fileHandler;  
 	 String errorMessage = "";
 	/**
@@ -71,8 +71,7 @@ public class TestSouscriptionUKMultiExcel {
 	public void setUp() throws Exception {
 		
 		 driver = this.getDriver(DriverType.FIREFOX);
-		 //driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-		 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
@@ -97,12 +96,6 @@ public class TestSouscriptionUKMultiExcel {
 				 capabilities=DesiredCapabilities.firefox();
 				 capabilities.setCapability("marionette", false);
 			     _Driver = new FirefoxDriver(capabilities);
-			     //FirefoxBinary firefoxBinary = new FirefoxBinary();
-			     //firefoxBinary.addCommandLineOptions("--headless");
-			     //FirefoxOptions firefoxOptions = new FirefoxOptions();
-			     //firefoxOptions.addArguments("--headless");
-			     //firefoxOptions.setBinary(firefoxBinary);
-			     //_Driver = new FirefoxDriver(firefoxOptions);
 			  
 			     break;
 			case CHROME:
@@ -113,9 +106,6 @@ public class TestSouscriptionUKMultiExcel {
 				 _Driver = new ChromeDriver(options);
 				 break;	
 			case INTERNETEXPLORER:
-				// System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
-				//		 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_x64_3.8.0\\IEDriverServer.exe");
-				 
 				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
 						 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_Win32_3.8.0\\IEDriverServer.exe");
 				 DesiredCapabilities capabilities=DesiredCapabilities.internetExplorer();
@@ -137,10 +127,10 @@ public class TestSouscriptionUKMultiExcel {
 	  public void testCaseSouscriptionUserExist() throws IOException,ParseException, InterruptedException {
 		  try{
 			  ExcelReader objExcelFile = new ExcelReader();
-			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_UK.xlsx";
+			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_PL.xlsx";
 			  Loader loader = new Loader();
 			  loader.setReader(new ExcelReader());
-			  List<Map<String, String>> result = loader.readFile(filePath, Country.UK);
+			  List<Map<String, String>> result = loader.readFile(filePath, Country.PL);
 			  
 			  for (Map m : result){
 				  errorMessage = "";
@@ -189,118 +179,131 @@ public class TestSouscriptionUKMultiExcel {
 	}
 
 	public void runSelenium(Map<String, String> resultSet) throws ParseException, InterruptedException, GUIException {
-		driver.get(BASE_URL + "/s/RCI_UK/");
-		//wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.linkText("KEY COVER"))));
-	    //driver.findElement(By.linkText("KEY COVER")).click();
-		driver.findElement(By.cssSelector("ul.menu-category.level-1 li:nth-of-type(2) a")).click();
-	    //driver.findElement(By.linkText("KEY COVER")).click();
-	    if (driver.findElements(By.cssSelector("button.close-dialog.add-all-to-cart.dialog-cart-show")).size() > 0){
-	    	driver.findElement(By.cssSelector("button.close-dialog.add-all-to-cart.dialog-cart-show")).click();
-	    }
-	    else{
-	    	driver.findElement(By.cssSelector("button.add-all-to-cart.product-0")).click();
-	    }
-	    driver.findElement(By.cssSelector("a.action.dialog-cart-show")).click();
-	    driver.findElement(By.xpath("(//form[@id='checkout-form']/fieldset/button)[2]")).click();
-	    
+		driver.get(BASE_URL + "/s/RCI_PL/");
+	
+	    this.selecProduct(driver);
 	    login(driver, resultSet);
-	    
 	    String URL = driver.getCurrentUrl();
-	    if (URL.equalsIgnoreCase("https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping")){
-	    	//user who never made a suscription
-	    	enterUserInfo(driver, resultSet);
-	    }
 	   
-	    //wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]"))).click();
-	   
-	    WebElement billingSaveElment = driver.findElement(By.cssSelector("button[name=\"dwfrm_billing_save\"]"));
-		jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
+	    By bySaveBill = By.cssSelector("button[name=\"dwfrm_billing_save\"]");
+	    //By bySaveBill = By.name("dwfrm_billing_save");
 		new FluentWait<WebDriver>(driver)
-	    .withTimeout(60, TimeUnit.SECONDS)
-	    .pollingEvery(2, TimeUnit.MILLISECONDS)
+	    .withTimeout(2, TimeUnit.MINUTES)
+	    .pollingEvery(2, TimeUnit.SECONDS)
 	    .ignoring(WebDriverException.class)
-	    .until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]")));
-	   
+	    .until(ExpectedConditions.presenceOfElementLocated(bySaveBill));
+		
+		WebElement billingSaveElment = driver.findElement(bySaveBill);
+		jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
 		billingSaveElment.click();
 	    getSouscription(driver, resultSet);
 
 	    makePayment(driver, resultSet);
 		
-	    WebElement el = driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i"));
+	   // WebElement el = driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i"));
 	    
 	    new FluentWait<WebDriver>(driver)
-	    .withTimeout(30, TimeUnit.SECONDS)
-	    .pollingEvery(2, TimeUnit.MILLISECONDS)
+	    .withTimeout(1, TimeUnit.MINUTES)
+	    .pollingEvery(2, TimeUnit.SECONDS)
 	    .ignoring(WebDriverException.class)
-	    .until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed"));
-	    //wait.until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed"));
+	    .until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_PL/orderconfirmed"));
+	    
 	    logout(driver);
 	   
 	}
 	private void logout(WebDriver driver) {
 		 driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i")).click();
-		 //if (driver.findElement(By.linkText("KEY COVER")) != null){
-		 new FluentWait<WebDriver>(driver)
-		    .withTimeout(300, TimeUnit.SECONDS)
-		    .pollingEvery(2, TimeUnit.MILLISECONDS)
-		    .ignoring(WebDriverException.class)
-		    .until(ExpectedConditions.elementToBeClickable(By.linkText("MY ACCOUNT")));
-		    driver.findElement(By.linkText("MY ACCOUNT")).click();
-		    //.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='account-logout']/a")));
-		    
-		// }
 		 driver.findElement(By.xpath("//span[@class='account-logout']/a")).click();
-	
 	}
 	private void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
-	    /*
-		 new FluentWait<WebDriver>(driver)
-		    .withTimeout(60, TimeUnit.SECONDS)
-		    .pollingEvery(2, TimeUnit.MILLISECONDS)
-		    .ignoring(WebDriverException.class)
-		    .until(ExpectedConditions.presenceOfElementLocated(By.id("dwfrm_billing_subscriptionInformation_vin")));
-		    driver.findElement(By.linkText("MY ACCOUNT")).click();
 		
-		WebElement vinElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin"));
-	    jse2.executeScript("arguments[0].scrollIntoView()", vinElement); 
-		vinElement.clear();
-	    vinElement.sendKeys(resultSet.get("VIN"));
-	    */
-	    WebElement plateElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate"));
-	    jse2.executeScript("arguments[0].scrollIntoView()", plateElement); 
-	    plateElement.clear();
-	    plateElement.sendKeys(resultSet.get("Registration"));
-	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInfoBrand"))).selectByVisibleText(resultSet.get("Brand").toUpperCase());
-	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInfoModel"))).selectByVisibleText(resultSet.get("Model"));
-	    
-	
-	    
+		
+		WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
+		datepicker.click();
+
 	    String strCarDate = resultSet.get("Vehicle Insurance Date");
 		Date dateVehicle =  sf.parse(strCarDate);
-	   
 	 	c.setTime(dateVehicle);
-	    WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
-	    datepicker.click();
-	   
 	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
 	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
 	    driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
+		
+	    WebElement vinElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleInfoVIN"));
+	    jse2.executeScript("arguments[0].scrollIntoView()", vinElement); 
+		vinElement.clear();
+	    vinElement.sendKeys(resultSet.get("VIN"));
+	 
+	    String registration = resultSet.get("Registration number");
+	    WebElement plate1Element = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleInfoPlateNo"));
+	    plate1Element.clear();
+	    plate1Element.sendKeys(registration);
 	    
-	   
+	  
+	    driver.findElement(By.xpath("(//img[@alt='...'])[2]")).click();
+	    
+	    String strDate1 = resultSet.get("Date first registration");
+	    Date dateVehicle1 =  sf.parse(strDate1);
+	 	c.setTime(dateVehicle1);
+	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
+	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
+	    driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
+		
+	    By byDateProduction = By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleModelYear");
+	    new FluentWait<WebDriver>(driver)
+	    .withTimeout(1, TimeUnit.MINUTES)
+	    .pollingEvery(2, TimeUnit.SECONDS)
+	    .ignoring(WebDriverException.class)
+	    .until(ExpectedConditions.presenceOfElementLocated(byDateProduction));
+	 
+	    WebElement criteriaConfirmationElement = driver.findElement(byDateProduction);
+	    jse2.executeScript("arguments[0].scrollIntoView()", criteriaConfirmationElement); 
+	    criteriaConfirmationElement.sendKeys(resultSet.get("Manufacturing Year"));
+	    
+	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleInfoBrand")))
+	    	.selectByValue(resultSet.get("brand"));
+	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleInfoModel")))
+	    	.selectByValue(resultSet.get("Model").toUpperCase());
+	  
+	    WebElement termsElement = driver.findElement(By.id("tyreinsurancepersonaldatalegaltext"));
+	    jse2.executeScript("arguments[0].scroll(0, 500)", termsElement); 
+	    
+	    
+	    By byTermConditions = By.cssSelector("input[id=\"dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions\"]");
+	    WebElement termConditionsElement = driver.findElement( byTermConditions);
+	    jse2.executeScript("arguments[0].scrollIntoView()", termConditionsElement); 
+	    new FluentWait<WebDriver>(driver)
+	    .withTimeout(1, TimeUnit.MINUTES)
+	    .pollingEvery(2, TimeUnit.SECONDS)
+	    .ignoring(WebDriverException.class)
+	    .until(ExpectedConditions.elementToBeClickable(termConditionsElement));
+	    jse2.executeScript("arguments[0].click()", termConditionsElement); 
+	    
+	    driver.findElement(By.id("continue-to-place-order")).click();
+		//logError(driver);
+	}
+	
+	public void selecProduct(WebDriver driver){
+		
+		 //driver.findElement(By.linkText("Securplus")).click();
+		 driver.findElement(By.cssSelector("ul.menu-category.level-1 li:nth-of-type(2) a")).click();
+		 
+		 driver.findElement(By.xpath("//div[@data-itemid='PL-P-TYREINSURANCE']")).click();
+		 
+		 By bySubProduct = By.cssSelector("button.add-all-to-cart.product-UBEZPIECZENIEOPON-Maxi");
+		 new FluentWait<WebDriver>(driver)
+		    .withTimeout(1, TimeUnit.MINUTES)
+		    .pollingEvery(2, TimeUnit.SECONDS)
+		    .ignoring(WebDriverException.class)
+		    .until(ExpectedConditions.elementToBeClickable(driver.findElement(bySubProduct)));
+		 WebElement subProductElement = driver.findElement(bySubProduct);
+		 jse2.executeScript("arguments[0].scrollIntoView()", subProductElement);
+		 subProductElement.click();
 		 
 		
-		WebElement agreeTermsElment = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_agreeTerms")); 
-		jse2.executeScript("arguments[0].scrollIntoView()", agreeTermsElment);
-		 new FluentWait<WebDriver>(driver)
-		    .withTimeout(300, TimeUnit.SECONDS)
-		    .pollingEvery(2, TimeUnit.MILLISECONDS)
-		    .ignoring(WebDriverException.class)
-		    .until(ExpectedConditions.elementToBeClickable(By.id("dwfrm_billing_subscriptionInformation_agreeTerms")));
-	
-		agreeTermsElment.click();
-		 logError(driver);
+		 driver.findElement(By.cssSelector("#ui-id-2 > div.actions > a.action.dialog-cart-show")).click();
+		 driver.findElement(By.name("dwfrm_cart_checkoutCart")).click();
+		 
 	}
-
 	private void logError(WebDriver driver) throws GUIException {
 		String errorMessage = getGUIError(driver);
 		if ((errorMessage != null )&&(!errorMessage.isEmpty())){
@@ -308,32 +311,32 @@ public class TestSouscriptionUKMultiExcel {
 		}
 	}
 	private void makePayment(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
-		WebElement billingSaveElment = driver.findElement(By.name("dwfrm_billing_save"));
+		By byMakePayment = By.name("dwfrm_billing_save");
+		 new FluentWait<WebDriver>(driver)
+		    .withTimeout(1, TimeUnit.MINUTES)
+		    .pollingEvery(2, TimeUnit.SECONDS)
+		    .ignoring(WebDriverException.class)
+		    .until(ExpectedConditions.elementToBeClickable(byMakePayment));
+		WebElement billingSaveElment = driver.findElement(byMakePayment);
 		jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
 		billingSaveElment.click();
 		
-		driver.findElement(By.cssSelector("button[value=\"Continue to Place Order >\"]")).click();
-	    //driver.findElement(By.name("dwfrm_billing_save")).click();
-	    driver.findElement(By.name("dwfrm_billing_paymentMethods_selectedPaymentMethodID")).click();
 		
-		WebElement paymentMethodElment = driver.findElement(By.name("dwfrm_billing_paymentMethods_selectedPaymentMethodID"));
-		jse2.executeScript("arguments[0].scrollIntoView()", paymentMethodElment); 
-		paymentMethodElment.click();
+	    driver.findElement(By.id("is-WorldPay")).click();
 	    
-	    //driver.findElement(By.id("is-WorldPay")).click();
-	    driver.findElement(By.id("placeOrder")).click();
+	    WebElement placeOrderElement = driver.findElement(By.id("placeOrder"));
+	    jse2.executeScript("arguments[0].scrollIntoView()", placeOrderElement); 
+	    placeOrderElement.click();
+	    
 	    driver.findElement(By.id("cardNumber")).clear();
 	    //System.out.println(""+resultSet.get("Card number"));
 	    driver.findElement(By.id("cardNumber")).sendKeys(resultSet.get("Card number"));
-	 
-	    String strDate = resultSet.get("Expiry date");
+	    
+	    new Select(driver.findElement(By.id("expiryMonth"))).selectByValue(String.format("%02d",
+	    		Integer.parseInt(resultSet.get("Expiry Month"))));
 		
-		Date date =  sf.parse(strDate);
-		
-		c.setTime(date);
-	    new Select(driver.findElement(By.id("expiryMonth"))).selectByValue(String.format("%02d", c.get(Calendar.MONTH)));
-	    new Select(driver.findElement(By.id("expiryYear"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
-		
+	    new Select(driver.findElement(By.id("expiryYear"))).selectByValue(resultSet.get("Expiry Year"));
+	   
 	    driver.findElement(By.id("securityCode")).clear();
 	    driver.findElement(By.id("securityCode")).sendKeys(resultSet.get("Security number"));
 	    
@@ -354,7 +357,8 @@ public class TestSouscriptionUKMultiExcel {
 	    WebElement loginElement = driver.findElement(By.name("dwfrm_login_login"));
 	    jse2.executeScript("arguments[0].scrollIntoView()", loginElement); 
 	    loginElement.click();
-	    logError(driver);
+	    //logError(driver);
+	   
 	}
 
 	 
@@ -369,16 +373,8 @@ public class TestSouscriptionUKMultiExcel {
 	    }
 	  }
 	private void enterUserInfo(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
-			//driver.findElement(By.id("dwfrm_login_username_d0pqphmpixou")).clear();
-		    //driver.findElement(By.id("dwfrm_login_username_d0pqphmpixou")).sendKeys(resultSet.get("email"));
-		    //driver.findElement(By.id("dwfrm_login_password_d0dopecnhtzp")).clear();
-		    //driver.findElement(By.id("dwfrm_login_password_d0dopecnhtzp")).sendKeys(resultSet.get("password"));
-		   // driver.findElement(By.name("dwfrm_login_login")).click();
+		
 		    new Select(driver.findElement(By.id("dwfrm_billing_title"))).selectByVisibleText("Miss");
-		    
-		    
-		    //driver.findElement(By.cssSelector("img.ui-datepicker-trigger")).click();
-		    //driver.findElement(By.linkText("2")).click();
 		    java.text.SimpleDateFormat sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		    Calendar c = Calendar.getInstance();
 		    
@@ -387,8 +383,6 @@ public class TestSouscriptionUKMultiExcel {
 			Date dateVehicle =  sf.parse(strCarDate);
 			// System.out.println("date of birth"+dateVehicle +"   type "+dateVehicle.getClass().getTypeName());
 		 	c.setTime(dateVehicle);
-		 	
-		 	//driver.findElement(By.name("dwfrm_billing_billingAddress_addressFields_birthday")).click();
 		 	// System.out.println("date of birth"+strCarDate);
 		    WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
 		    //JavascriptExecutor jse2 = (JavascriptExecutor)driver;
