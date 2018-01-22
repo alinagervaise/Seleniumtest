@@ -212,63 +212,32 @@ public class TestSouscriptionBRMultiExcel {
 	   
 	}
 	private void logout(WebDriver driver) {
-		 driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i")).click();
-		 driver.findElement(By.xpath("//span[@class='account-logout']/a")).click();
+		By byMenuLogout = By.xpath("//div[@class='header-banner-right']/ul/li/a");
+		new FluentWait<WebDriver>(driver)
+	    .withTimeout(2, TimeUnit.MINUTES)
+	    .pollingEvery(2, TimeUnit.SECONDS)
+	    .ignoring(WebDriverException.class)
+	    .until(ExpectedConditions.elementToBeClickable(byMenuLogout));
+		driver.findElement(byMenuLogout).click();
+		driver.findElement(By.xpath("//span[@class='account-logout']/a")).click();
+		
 	}
 	private void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
 		
 		
-		WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
-		datepicker.click();
-
-	    String strCarDate = resultSet.get("Vehicle Insurance Date");
-		Date dateVehicle =  sf.parse(strCarDate);
-	 	c.setTime(dateVehicle);
-	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
-	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
-	    driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
 		
-	    WebElement vinElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleInfoVIN"));
+	    WebElement vinElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin"));
 	    jse2.executeScript("arguments[0].scrollIntoView()", vinElement); 
 		vinElement.clear();
 	    vinElement.sendKeys(resultSet.get("VIN"));
 	 
-	    String registration = resultSet.get("Registration number");
-	    WebElement plate1Element = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleInfoPlateNo"));
-	    plate1Element.clear();
-	    plate1Element.sendKeys(registration);
 	    
-	  
-	    driver.findElement(By.xpath("(//img[@alt='...'])[2]")).click();
+	    WebElement plateElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate"));
+	    plateElement.clear();
+	    plateElement.sendKeys(resultSet.get("Registration number"));
 	    
-	    String strDate1 = resultSet.get("Date first registration");
-	    Date dateVehicle1 =  sf.parse(strDate1);
-	 	c.setTime(dateVehicle1);
-	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
-	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
-	    driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
-		
-	    By byDateProduction = By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleModelYear");
-	    new FluentWait<WebDriver>(driver)
-	    .withTimeout(1, TimeUnit.MINUTES)
-	    .pollingEvery(2, TimeUnit.SECONDS)
-	    .ignoring(WebDriverException.class)
-	    .until(ExpectedConditions.presenceOfElementLocated(byDateProduction));
-	 
-	    WebElement criteriaConfirmationElement = driver.findElement(byDateProduction);
-	    jse2.executeScript("arguments[0].scrollIntoView()", criteriaConfirmationElement); 
-	    criteriaConfirmationElement.sendKeys(resultSet.get("Manufacturing Year"));
-	    
-	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleInfoBrand")))
-	    	.selectByValue(resultSet.get("brand"));
-	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_tyreinsurance_vehicleInfoModel")))
-	    	.selectByValue(resultSet.get("Model").toUpperCase());
-	  
-	    WebElement termsElement = driver.findElement(By.id("tyreinsurancepersonaldatalegaltext"));
-	    jse2.executeScript("arguments[0].scroll(0, 500)", termsElement); 
-	    
-	    
-	    By byTermConditions = By.cssSelector("input[id=\"dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions\"]");
+	
+	    By byTermConditions = By.id("dwfrm_billing_subscriptionInformation_agreeTerms");
 	    WebElement termConditionsElement = driver.findElement( byTermConditions);
 	    jse2.executeScript("arguments[0].scrollIntoView()", termConditionsElement); 
 	    new FluentWait<WebDriver>(driver)
@@ -278,36 +247,66 @@ public class TestSouscriptionBRMultiExcel {
 	    .until(ExpectedConditions.elementToBeClickable(termConditionsElement));
 	    jse2.executeScript("arguments[0].click()", termConditionsElement); 
 	    
-	    driver.findElement(By.id("continue-to-place-order")).click();
+	    driver.findElement(By.name("dwfrm_billing_save")).click();
 		//logError(driver);
 	}
 	
-	public void selecProduct(WebDriver driver, Map<String, String> resultSet){
+	public void selecProduct(WebDriver driver, Map<String, String> resultSet) throws ParseException{
 		
 		 driver.findElement(By.cssSelector("ul.menu-category.level-1 li:nth-of-type(1) a")).click();
 		 
-		 driver.findElement(By.xpath("//div[@data-itemid='BR-P-WARRANTYEXTNV']")).click();
+		 driver.findElement(By.xpath("//div[@data-itemid='BR-P-MAINTENANCE']")).click();
+		 
+		 new Select(driver.findElement(By.id("va-VehicleVersion"))).selectByVisibleText(resultSet.get("Model"));
+		 
+		 new Select(driver.findElement(By.id("va-duration"))).selectByVisibleText(resultSet.get("Souscription duration"));
 		 
 		 new Select(driver.findElement(By.cssSelector("#va-mileage"))).selectByVisibleText(resultSet.get("Mileage covered"));
 		    
-		 new Select(driver.findElement(By.id("va-VehicleVersion"))).selectByVisibleText(resultSet.get("Souscription duration"));
-		 
+		
 		    
-		 By bySubProduct = By.cssSelector("button.add-all-to-cart.product-0");
+		 By bySubProduct = By.cssSelector("a.add-all-to-cart.product-0");
 		 new FluentWait<WebDriver>(driver)
 		    .withTimeout(1, TimeUnit.MINUTES)
 		    .pollingEvery(2, TimeUnit.SECONDS)
 		    .ignoring(WebDriverException.class)
-		    .until(ExpectedConditions.elementToBeClickable(driver.findElement(bySubProduct)));
+		    .until(ExpectedConditions.elementToBeClickable(bySubProduct));
 		 WebElement subProductElement = driver.findElement(bySubProduct);
 		 jse2.executeScript("arguments[0].scrollIntoView()", subProductElement);
 		 subProductElement.click();
-		 
 		
-		 driver.findElement(By.cssSelector("#ui-id-2 > div.actions > a.action.dialog-cart-show")).click();
-		 driver.findElement(By.name("dwfrm_cart_checkoutCart")).click();
+		driver.findElement(By.id("vehiclefirstservice2")).click();
+		 
+		driver.findElement(By.id("vehiclecurrentmilage")).clear();
+		driver.findElement(By.id("vehiclecurrentmilage")).sendKeys(resultSet.get("Actual Mileage"));
+		
+		WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
+		datepicker.click();
+		String strCarDate = resultSet.get("Car registration date");
+		Date dateVehicle =  sf.parse(strCarDate);
+		c.setTime(dateVehicle);
+		new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
+		new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
+		driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
+		
+		driver.findElement(By.cssSelector("button.product-0")).click();
+		//driver.findElement(By.xpath("button.product-0")).click();
+		
+		driver.findElement(By.cssSelector("a.action.dialog-cart-show")).click();
+		
+		By byAddToCart = By.name("dwfrm_cart_checkoutCart");
+		 new FluentWait<WebDriver>(driver)
+		    .withTimeout(1, TimeUnit.MINUTES)
+		    .pollingEvery(2, TimeUnit.SECONDS)
+		    .ignoring(WebDriverException.class)
+		    .until(ExpectedConditions.elementToBeClickable(byAddToCart));
+		driver.findElement(byAddToCart).click();
+		
+		
+		
 		 
 	}
+	
 	private void logError(WebDriver driver) throws GUIException {
 		String errorMessage = getGUIError(driver);
 		if ((errorMessage != null )&&(!errorMessage.isEmpty())){

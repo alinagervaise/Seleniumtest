@@ -1,6 +1,3 @@
-/**
- * 
- */
 package test;
 
 import static org.junit.Assert.*;
@@ -214,7 +211,7 @@ public class TestSouscriptionDEMultiExcel {
 	}
 	private void logout(WebDriver driver) {
 		 //driver.findElement(By.linkText("Mein Konto")).click();
-		 driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i")).click();
+		 driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a")).click();
 		 //driver.findElement(By.linkText("Abmeldung")).click();
 		 driver.findElement(By.xpath("//span[@class='account-logout']/a")).click();
 	}
