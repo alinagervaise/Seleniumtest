@@ -1,6 +1,0 @@
-janv. 02, 2018 6:08:34 PM test.TestSouscriptionMultiExcelFantome enterUserInfo
-INFOS: VERRIFICATION FORM    =====
-janv. 02, 2018 6:08:52 PM test.TestSouscriptionMultiExcelFantome enterUserInfo
-INFOS: VERRIFICATION FORM    =====
-janv. 02, 2018 6:14:39 PM test.TestSouscriptionMultiExcelFantome generateLog
-GRAVE: Expected condition failed: waiting for presence of element located by: By.name: dwfrm_cart_checkoutCart (tried for 300 second(s) with 2 MILLISECONDS interval)

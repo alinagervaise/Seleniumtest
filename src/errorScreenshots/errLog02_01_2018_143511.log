@@ -1,5 +1,0 @@
-janv. 02, 2018 2:35:23 PM test.TestSouscriptionMultiExcelFantome enterUserInfo
-INFOS: VERRIFICATION FORM    =====
-janv. 02, 2018 2:36:16 PM test.TestSouscriptionMultiExcelFantome generateLog
-GRAVE: {"errorMessage":"Unable to find element with css selector 'button[name=\"dwfrm_cart_checkoutCart\"]'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"80","Content-Type":"application/json; charset=utf-8","Host":"localhost:12474","User-Agent":"Apache-HttpClient/4.5.3 (Java/1.8.0_131)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"css selector\",\"value\":\"button[name\\u003d\\\"dwfrm_cart_checkoutCart\\\"]\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/c19f5220-efc1-11e7-85b0-03de1b1663ed/element"}}
-Command duration or timeout: 0 milliseconds

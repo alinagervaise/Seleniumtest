@@ -55,7 +55,7 @@ public class TestSouscriptionUKExcel {
 	@Before
 	public void setUp() throws Exception {
 		
-		 driver = this.getDriver(DriverType.INTERNETEXPLORER);
+		 driver = this.getDriver(DriverType.FIREFOX);
 		 //driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 		 driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		 wait = new WebDriverWait(driver, 1);
@@ -204,7 +204,8 @@ public class TestSouscriptionUKExcel {
 	    .pollingEvery(5, TimeUnit.MILLISECONDS)
 	    .ignoring(WebDriverException.class)
 	    .until(ExpectedConditions.elementToBeClickable(agreeTermsElment));
-		agreeTermsElment.click();
+		//agreeTermsElment.click();
+		jse2.executeScript("arguments[0].click()", agreeTermsElment); 
 	}
 	private void makePayment(WebDriver driver, Map<String, String> resultSet) throws ParseException{
 		WebElement billingSaveElment = driver.findElement(By.name("dwfrm_billing_save"));
