@@ -77,7 +77,7 @@ public class TestSouscriptionDEMultiExcel {
 		 java.text.SimpleDateFormat sf0 = new java.text.SimpleDateFormat("dd_MM_yyyy");
 		 Date date = new Date(System.currentTimeMillis());
 		 String currentDateStr = sf0.format(date);
-		 String logFile = "errLog"+currentDateStr+".log";
+		 String logFile = "errLogDE"+currentDateStr+".log";
 		 fileHandler = new FileHandler( System.getProperty("user.dir")
 				 					+"\\src\\errorScreenshots\\"+logFile, true);  
 	     LOGGER.addHandler(fileHandler);
@@ -169,7 +169,7 @@ public class TestSouscriptionDEMultiExcel {
 		  Date date = new Date(System.currentTimeMillis());
 		  String currentDateStr = sf.format(date);
 		  String outputPath = System.getProperty("user.dir")
-				  	+"\\src\\errorScreenshots\\screenshot"
+				  	+"\\src\\errorScreenshots\\screenshotDE"
 				  +currentDateStr+".png";
 		  Files.copy( errFile, new File(outputPath));
 		  
@@ -205,7 +205,7 @@ public class TestSouscriptionDEMultiExcel {
 	    .ignoring(WebDriverException.class)
 	    .until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_DE/orderconfirmed"));
 	    //wait.until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_DE/orderconfirmed"));
-	    LOGGER.info("BEFORE LOGOUT---------->");
+	    //LOGGER.info("BEFORE LOGOUT---------->");
 	    logout(driver);
 	   
 	}

@@ -81,7 +81,7 @@ public class TestSouscriptionUKMultiExcel {
 		 java.text.SimpleDateFormat sf0 = new java.text.SimpleDateFormat("dd_MM_yyyy");
 		 Date date = new Date(System.currentTimeMillis());
 		 String currentDateStr = sf0.format(date);
-		 String logFile = "errLog"+currentDateStr+".log";
+		 String logFile = "errLogUK"+currentDateStr+".log";
 		 fileHandler = new FileHandler( System.getProperty("user.dir")
 				 					+"\\src\\errorScreenshots\\"+logFile, true);  
 	     LOGGER.addHandler(fileHandler);
