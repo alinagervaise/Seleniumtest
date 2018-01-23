@@ -1,0 +1,379 @@
+janv. 19, 2018 10:00:56 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 10:02:01 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 10:02:24 AM test.TestSouscriptionDEMultiExcel login
+INFOS: BEFORE TRY  TO SCROLL TO SAVE BUTTON----------->
+janv. 19, 2018 10:05:50 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:42782 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+janv. 19, 2018 10:06:08 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 10:06:38 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 10:06:51 AM test.TestSouscriptionDEMultiExcel login
+INFOS: BEFORE TRY  TO SCROLL TO SAVE BUTTON----------->
+janv. 19, 2018 10:06:58 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <input class="input-checkbox required" id="dwfrm_billing_subscriptionInformation_criteriaconfirmation" name="dwfrm_billing_subscriptionInformation_criteriaconfirmation" aria-required="true" aria-describedby="dwfrm_billing_subscriptionInformation_criteriaconfirmation-error" type="checkbox"> is not clickable at point (405.6166687011719, 344.58331298828125). Other element would receive the click: <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"></div>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 4b829c6b-91ee-4697-a09f-295b96d94ec2
+janv. 19, 2018 10:13:37 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 10:13:51 AM test.TestSouscriptionDEMultiExcel login
+INFOS: BEFORE TRY  TO SCROLL TO SAVE BUTTON----------->
+janv. 19, 2018 10:13:59 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <input class="input-checkbox required" id="dwfrm_billing_subscriptionInformation_criteriaconfirmation" name="dwfrm_billing_subscriptionInformation_criteriaconfirmation" aria-required="true" aria-describedby="dwfrm_billing_subscriptionInformation_criteriaconfirmation-error" type="checkbox"> is not clickable at point (405.6166687011719, 344.58331298828125). Other element would receive the click: <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"></div>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 7cbd2b2a-2b31-4667-b0e7-20fc5be83ce8
+janv. 19, 2018 10:39:46 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 10:40:04 AM test.TestSouscriptionDEMultiExcel login
+INFOS: BEFORE TRY  TO SCROLL TO SAVE BUTTON----------->
+janv. 19, 2018 10:45:17 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"id","selector":"cardNumber"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 10:54:30 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 10:54:50 AM test.TestSouscriptionDEMultiExcel login
+INFOS: BEFORE TRY  TO SCROLL TO SAVE BUTTON----------->
+janv. 19, 2018 11:05:10 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+AVERTISSEMENT: Testmodus – Dies ist keine Live-Transaktion.
+        Testmodus – Dies ist keine Live-Transaktion.
+    
+janv. 19, 2018 11:05:52 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 11:13:05 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:4970 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+janv. 19, 2018 11:13:23 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 11:23:55 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+AVERTISSEMENT: Testmodus – Dies ist keine Live-Transaktion.
+        Testmodus – Dies ist keine Live-Transaktion.
+    
+janv. 19, 2018 11:36:54 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 11:40:55 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 11:42:07 AM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.TimeoutException   Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on XP (e4c02d9f76446980af5b54e1ca571d73)] -> name: dwvar_DE-C-SECURPLUS-COVER300_termsDuration] (tried for 60 second(s) with 2 SECONDS interval)
+janv. 19, 2018 12:06:01 PM test.TestSouscriptionDEMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=mar., 11 09 00:00:00 1993, firstname=Alan, HSN=4854, Postal Code=43434, Card number=4917610000000000, confirm password=Number78*, Vehicle Insurance Date begin=ven., 02 09 00:00:00 2018, sexe=Herr, City=Hermitswagen, TSN=675, Security number=434, lastname=Piton, Brand=NISSAN, Licence plate=EREJH3964, password=Number78*, Vehicle Insurance Date=lun., 12 25 00:00:00 2017, Expiry date=ven., 11 01 00:00:00 2019, Street=3 Alfred Dreyfus, Country=Deutschland, VIN=43433434343434304, email=alanpiton@mailinator.com}
+
+janv. 19, 2018 1:42:08 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 1:48:51 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 1:50:20 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:44111 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+janv. 19, 2018 1:51:27 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 1:56:37 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"name","selector":"dwvar_DE-C-SECURPLUS-COVER300_termsDuration"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 1:58:28 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 2:01:29 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 2:06:51 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 2:52:33 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 2:53:01 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.lang.IllegalArgumentException   Argument is of an illegal type: org.openqa.selenium.By$ByName
+janv. 19, 2018 2:56:48 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 2:57:11 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.lang.IllegalArgumentException   Argument is of an illegal type: org.openqa.selenium.By$ByName
+janv. 19, 2018 2:58:25 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 2:58:45 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.lang.IllegalArgumentException   Argument is of an illegal type: org.openqa.selenium.By$ByName
+janv. 19, 2018 3:02:57 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 3:03:27 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.lang.IllegalArgumentException   Argument is of an illegal type: org.openqa.selenium.By$ByName
+janv. 19, 2018 3:04:50 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 3:05:16 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.lang.IllegalArgumentException   Argument is of an illegal type: org.openqa.selenium.By$ById
+janv. 19, 2018 3:06:03 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 3:06:22 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.lang.IllegalArgumentException   Argument is of an illegal type: org.openqa.selenium.By$ById
+janv. 19, 2018 3:07:50 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 3:13:13 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Cannot locate option with value: AUSTIN
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+janv. 19, 2018 3:38:34 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 3:43:56 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Cannot locate option with value: Maestro
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+janv. 19, 2018 3:47:48 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 3:53:11 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"id","selector":"dwfrm_billing_subscriptionInformation_cyberrisk_termsconditions"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 3:57:59 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 3:59:18 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:30526 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+janv. 19, 2018 3:59:33 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:05:03 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"id","selector":"dwfrm_billing_subscriptionInformation_cyberrisk_termsconditions"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 4:08:56 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:10:33 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:40848 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+janv. 19, 2018 4:10:54 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:16:16 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"id","selector":"dwfrm_billing_subscriptionInformation_cyberrisk_termsconditions"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 4:22:36 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:28:00 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"id","selector":"dwfrm_billing_subscriptionInformation_cyberrisk_termsconditions"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 4:36:21 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:36:42 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <input class="input-checkbox" id="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions" name="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions" value="true" required="" aria-required="true" aria-describedby="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions-error" type="checkbox"> is not clickable at point (214.3000030517578, 6.9499969482421875). Other element would receive the click: <label for="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions"></label>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 119b74d4-5d0d-4fc3-81e3-c9224cf25a89
+janv. 19, 2018 4:38:20 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:38:39 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <input class="input-checkbox" id="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions" name="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions" value="true" required="" aria-required="true" aria-describedby="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions-error" type="checkbox"> is not clickable at point (214.3000030517578, 6.9499969482421875). Other element would receive the click: <label for="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions"></label>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: f1304341-90cd-40f6-9278-e8fb375f5f96
+janv. 19, 2018 4:40:55 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:41:21 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <input class="input-checkbox" id="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions" name="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions" value="true" required="" aria-required="true" aria-describedby="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions-error" type="checkbox"> is not clickable at point (214.3000030517578, 513.9500122070312). Other element would receive the click: <div class="cookie-banner"></div>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: d39dcd8b-7be7-4af7-a965-c2a58b5372ba
+janv. 19, 2018 4:54:11 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:54:44 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <input class="input-checkbox" id="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions" name="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions" value="true" required="" aria-required="true" aria-describedby="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions-error" type="checkbox"> is not clickable at point (214.3000030517578, 6.9499969482421875). Other element would receive the click: <label for="dwfrm_billing_subscriptionInformation_tyreinsurance_termsconditions"></label>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 53784b89-c0f8-475c-a2d6-3aa45a69f26c
+janv. 19, 2018 4:56:21 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 4:58:54 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:37618 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+janv. 19, 2018 4:59:10 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 5:04:32 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"id","selector":"is-WorldPay"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 5:05:33 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 5:10:56 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"id","selector":"is-WorldPay"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 5:12:44 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 5:13:09 PM test.TestSouscriptionPLMultiExcel makePayment
+INFOS: ---------------------------------->
+janv. 19, 2018 5:14:17 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.lang.NullPointerException   null
+janv. 19, 2018 5:16:47 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 5:17:07 PM test.TestSouscriptionPLMultiExcel makePayment
+INFOS: ---------------------------------->https://staging-store-rcibsp.demandware.net/s/RCI_PL/payment?lang=pl_PL
+janv. 19, 2018 5:21:23 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:44249 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+janv. 19, 2018 5:21:29 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 5:21:55 PM test.TestSouscriptionPLMultiExcel makePayment
+INFOS: ---------------------------------->https://staging-store-rcibsp.demandware.net/s/RCI_PL/subscription?lang=pl_PL
+janv. 19, 2018 5:26:55 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"id","selector":"is-WorldPay"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 5:30:27 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 5:35:57 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Cannot locate option with value: 2020
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+janv. 19, 2018 5:52:51 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 5:53:25 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.util.IllegalFormatConversionException   d != java.lang.String
+janv. 19, 2018 5:55:08 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 5:57:36 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+janv. 19, 2018 6:03:14 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:21175 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+janv. 19, 2018 6:09:42 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=Kwid, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+janv. 19, 2018 6:14:48 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"xpath","selector":"//div[@data-itemid='PL-P-TYREINSURANCE']"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 6:14:52 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=Kwid, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+janv. 19, 2018 6:20:00 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"css selector","selector":"button.add-all-to-cart.product-UBEZPIECZENIEOPON-Maxi"}
+Command duration or timeout: 0 milliseconds
+janv. 19, 2018 6:25:45 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=Kwid, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+janv. 19, 2018 6:30:54 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"css selector","selector":"#va-mileage"}
+Command duration or timeout: 0 milliseconds

@@ -1,0 +1,2 @@
+janv. 02, 2018 2:31:52 PM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: Expected condition failed: waiting for visibility of element located by By.cssSelector: button[name="dwfrm_cart_checkoutCart"] (tried for 120 second(s) with 2 MILLISECONDS interval)

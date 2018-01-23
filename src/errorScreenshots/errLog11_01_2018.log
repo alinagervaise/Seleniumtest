@@ -1,0 +1,16 @@
+janv. 11, 2018 5:28:37 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 11, 2018 5:36:02 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <input class="input-checkbox checkbox required" id="dwfrm_billing_subscriptionInformation_agreeTerms" name="dwfrm_billing_subscriptionInformation_agreeTerms" value="true" aria-required="true" aria-describedby="dwfrm_billing_subscriptionInformation_agreeTerms-error" type="checkbox"> is not clickable at point (405.6166687011719, 112.94999694824219). Other element would receive the click: <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="0" data-year="2017"></td>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 981f6ce4-e25c-41f4-9cd0-d4fc749420cb
+janv. 11, 2018 5:36:03 PM test.TestSouscriptionMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Jean , Postal Code=SW1A 2AA, Card number=4917610000000000, confirm password=JSK-man?, City=London, phone number=448006891001, Security number=345, lastname=Renaud, Brand=Audi, password=JSK-man?, Property number / Name=33, Vehicle Insurance Date=dim., 02 05 00:00:00 2017, Expiry date=sam., 08 01 00:00:00 2020, Registration=BJ82 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=WBAWR3C55AP462424, date of birth=jeu., 03 02 00:00:00 2017, email=jeanrenauld@mailinator.com}
+

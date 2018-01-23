@@ -1,0 +1,136 @@
+janv. 09, 2018 10:17:08 AM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.name: dwfrm_cart_checkoutCart (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 10:17:42 AM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: {"errorMessage":"Element is not currently interactable and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"27","Content-Type":"application/json; charset=utf-8","Host":"localhost:33811","User-Agent":"Apache-HttpClient/4.5.3 (Java/1.8.0_131)"},"httpVersion":"1.1","method":"POST","post":"{\"id\":\":wdc:1515489461898\"}","url":"/clear","urlParsed":{"anchor":"","query":"","file":"clear","directory":"/","path":"/clear","relative":"/clear","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/clear","queryKey":{},"chunks":["clear"]},"urlOriginal":"/session/e9a830a0-f51d-11e7-89c9-65808c4611fe/element/:wdc:1515489461898/clear"}}
+Command duration or timeout: 0 milliseconds
+janv. 09, 2018 10:18:54 AM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: {"errorMessage":"Element is not currently interactable and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"27","Content-Type":"application/json; charset=utf-8","Host":"localhost:13230","User-Agent":"Apache-HttpClient/4.5.3 (Java/1.8.0_131)"},"httpVersion":"1.1","method":"POST","post":"{\"id\":\":wdc:1515489533224\"}","url":"/clear","urlParsed":{"anchor":"","query":"","file":"clear","directory":"/","path":"/clear","relative":"/clear","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/clear","queryKey":{},"chunks":["clear"]},"urlOriginal":"/session/14b63940-f51e-11e7-a8eb-e396a8c0a6a9/element/:wdc:1515489533224/clear"}}
+Command duration or timeout: 0 milliseconds
+janv. 09, 2018 10:19:52 AM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: {"errorMessage":"Element is not currently interactable and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"27","Content-Type":"application/json; charset=utf-8","Host":"localhost:40445","User-Agent":"Apache-HttpClient/4.5.3 (Java/1.8.0_131)"},"httpVersion":"1.1","method":"POST","post":"{\"id\":\":wdc:1515489591492\"}","url":"/clear","urlParsed":{"anchor":"","query":"","file":"clear","directory":"/","path":"/clear","relative":"/clear","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/clear","queryKey":{},"chunks":["clear"]},"urlOriginal":"/session/37b48190-f51e-11e7-bc98-13830055654e/element/:wdc:1515489591492/clear"}}
+Command duration or timeout: 0 milliseconds
+janv. 09, 2018 10:31:38 AM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: Expected condition failed: waiting for url to be "https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription". Current url: "https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping" (tried for 30 second(s) with 2 MILLISECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.84', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+janv. 09, 2018 10:45:33 AM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: {"errorMessage":"Unable to find element with name 'dwfrm_cart_checkoutCart'","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"50","Content-Type":"application/json; charset=utf-8","Host":"localhost:28594","User-Agent":"Apache-HttpClient/4.5.3 (Java/1.8.0_131)"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"name\",\"value\":\"dwfrm_cart_checkoutCart\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/1ced5050-f521-11e7-beb2-935af29a2762/element"}}
+Command duration or timeout: 0 milliseconds
+janv. 09, 2018 10:50:33 AM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.cssSelector: button[name="dwfrm_cart_checkoutCart"] (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 10:55:33 AM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //form[@id='checkout-form']/fieldset/button (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 11:00:33 AM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@name='dwfrm_cart_checkoutCart'])[2] (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 11:05:34 AM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //div[2]/form/fieldset/button (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 2:43:30 PM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.name: dwfrm_cart_checkoutCart (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 2:48:30 PM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.cssSelector: button[name="dwfrm_cart_checkoutCart"] (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 2:53:30 PM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //form[@id='checkout-form']/fieldset/button (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 2:58:30 PM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@name='dwfrm_cart_checkoutCart'])[2] (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 3:00:11 PM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: {"errorMessage":"Element is not currently interactable and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip,deflate","Connection":"Keep-Alive","Content-Length":"27","Content-Type":"application/json; charset=utf-8","Host":"localhost:22534","User-Agent":"Apache-HttpClient/4.5.3 (Java/1.8.0_131)"},"httpVersion":"1.1","method":"POST","post":"{\"id\":\":wdc:1515506410672\"}","url":"/clear","urlParsed":{"anchor":"","query":"","file":"clear","directory":"/","path":"/clear","relative":"/clear","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/clear","queryKey":{},"chunks":["clear"]},"urlOriginal":"/session/5cddfc90-f545-11e7-9368-5746d7a014ac/element/:wdc:1515506410672/clear"}}
+Command duration or timeout: 0 milliseconds
+janv. 09, 2018 3:13:34 PM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.name: dwfrm_cart_checkoutCart (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 3:23:34 PM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.cssSelector: button[name="dwfrm_cart_checkoutCart"] (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 3:33:34 PM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //form[@id='checkout-form']/fieldset/button (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 3:43:40 PM test.TestSouscriptionMultiExcelFantome runSelenium
+GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //button[@name='dwfrm_cart_checkoutCart'])[2] (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 3:53:42 PM test.TestSouscriptionMultiExcelFantome generateLog
+GRAVE: Expected condition failed: waiting for presence of element located by: By.xpath: //div[2]/form/fieldset/button (tried for 1 second(s) with 500 MILLISECONDS interval)
+janv. 09, 2018 5:26:42 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:29:23 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:32:52 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:35:21 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:41:19 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:42:07 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:44:41 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:47:01 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:56:26 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 5:58:38 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:00:51 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:04:35 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:07:43 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:08:44 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:12:19 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:13:23 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:15:33 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:17:48 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:18:31 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:25:08 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:27:00 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+janv. 09, 2018 6:27:51 PM test.TestSouscriptionSeleniteMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
