@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 import java.util.regex.Pattern;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileSystems;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -44,9 +45,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.google.common.io.Files;
 
+import staging.rcibsp.ConstantUtils;
 import staging.rcibsp.Country;
+import staging.rcibsp.DriverType;
 import staging.rcibsp.ExcelReader;
 import staging.rcibsp.Loader;
+import staging.rcibsp.WebDriverFactory;
 
 
 /**
@@ -69,14 +73,11 @@ public class TestSouscriptionUKMultiExcelFantome {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	enum DriverType{
-		FIREFOX, CHROME, PHANTOMEJS, HTMLUNITDRIVER
-	};
-	
+
 	@Before
 	public void setUp() throws Exception {
 		
-		 driver = this.getDriver(DriverType.PHANTOMEJS, true);
+		 driver = new WebDriverFactory().getDriver(DriverType.PHANTOMEJS);
 		 //driver = this.getDriver(DriverType.FIREFOX, true);
 		 //driver = this.getDriver(DriverType.PHANTOMEJS, true);
 		 //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -90,88 +91,22 @@ public class TestSouscriptionUKMultiExcelFantome {
 		 Date date = new Date(System.currentTimeMillis());
 		 String currentDateStr = sf0.format(date);
 		 String logFile = "errLogUK"+currentDateStr+".log";
-		 fileHandler = new FileHandler( System.getProperty("user.dir")
-				 					+"\\src\\errorScreenshots\\"+logFile, true);  
+		 String handlerLogFile = String.join(ConstantUtils.SCREENHOT_FOLDER_PATH, logFile);
+		 fileHandler = new FileHandler( handlerLogFile, true);  
 	     LOGGER.addHandler(fileHandler);
 	     SimpleFormatter formatter = new SimpleFormatter();  
 	     fileHandler.setFormatter(formatter);
 	     
 	}
 	
-	private WebDriver getDriver( DriverType driverType, boolean headless){
-		WebDriver _Driver = null;
-		switch(driverType){
-			case FIREFOX:
-				 System.setProperty("webdriver.gecko.driver", "C:\\SELENIUM_DRIVERS\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-				 
-				 if (headless){
-					 FirefoxBinary firefoxBinary = new FirefoxBinary();
-					 firefoxBinary.addCommandLineOptions("--headless");
-					 FirefoxOptions firefoxOptions = new FirefoxOptions();
-					 firefoxOptions.setBinary(firefoxBinary);
-					 _Driver =  new FirefoxDriver(firefoxOptions);	 
-				 }
-				 else{
-					DesiredCapabilities capabilities=DesiredCapabilities.firefox();
-					capabilities.setCapability("marionette", false);
-					_Driver = new FirefoxDriver(capabilities);
-					_Driver.manage().window().maximize();
-				 }
-				 
-			     break;
-			case CHROME:
-				 System.setProperty("webdriver.chrome.driver", "C:\\SELENIUM_DRIVERS\\chromedriver_win32\\chromedriver.exe");
-				 ChromeOptions options = new ChromeOptions();
-				 if (headless){
-					 options.addArguments("headless");
-				 }
-				 else{
-					 options.addArguments("--start-maximized");
-				 }
-				 _Driver = new ChromeDriver(options);
-				 break;	
-			case HTMLUNITDRIVER:
-				//_Driver = new HtmlUnitDriver(BrowserVersion.INTERNET_EXPLORER_11);
-				_Driver = new HtmlUnitDriver();
-				
-				break;
-			case PHANTOMEJS:
-				String path = "C:\\SELENIUM_DRIVERS\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe";
-				 phantomJsBinaryPath = System.setProperty("phantomjs.binary.path", path);
-				 DesiredCapabilities caps = new DesiredCapabilities();
-			     caps.setCapability(
-			                PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
-			                phantomJsBinaryPath);
-			     
-			     caps.setJavascriptEnabled(true);
-			     
-			     ArrayList<String> cliArgsCap = new ArrayList();
-			     cliArgsCap.add("--web-security=false");
-			     cliArgsCap.add("--ssl-protocol=any");
-			     cliArgsCap.add("--ignore-ssl-errors=true");
-			     cliArgsCap.add("--webdriver-loglevel=ERROR");
-
-			     caps.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, cliArgsCap);
-				 caps.setCapability("takesScreenshot", true);
-			     _Driver = new PhantomJSDriver(caps);
-			   _Driver.manage().window().maximize();
-			
-			     
-				
-		}
-		return _Driver;
-	}
-	
-
-
 	  @Test
 	  public void testCaseSouscriptionUserExist() throws Exception {
 		  try{
 			  ExcelReader objExcelFile = new ExcelReader();
-			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_UK.xlsx";
+			  
 			  Loader loader = new Loader();
 			  loader.setReader(new ExcelReader());
-			  List<Map<String, String>> result = loader.readFile(filePath, Country.UK);
+			  List<Map<String, String>> result = loader.readFile(ConstantUtils.INPUT_FILE_PATH_UK, Country.UK);
 			  
 			  for (Map m : result){
 				  if (m.isEmpty()){
@@ -193,9 +128,10 @@ public class TestSouscriptionUKMultiExcelFantome {
 		  java.text.SimpleDateFormat sf = new java.text.SimpleDateFormat("dd_MM_yyyy_HHmmss");
 		  Date date = new Date(System.currentTimeMillis());
 		  String currentDateStr = sf.format(date);
-		  String outputPath = System.getProperty("user.dir")
-				  	+"\\src\\errorScreenshots\\screenshotUK"
-				  +currentDateStr+".png";
+		  String screenshotFile = "screenshotUK"+currentDateStr+".png";
+		  String outputPath = String.join(FileSystems.getDefault().getSeparator(),
+				  							ConstantUtils.DRIVER_FOLDER_PATH,
+				  							screenshotFile);
 		  Files.copy( errFile, new File(outputPath));
 		  LOGGER.log(Level.SEVERE, ex.getMessage());
 	}

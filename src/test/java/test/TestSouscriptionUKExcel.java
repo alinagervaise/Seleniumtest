@@ -28,8 +28,11 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import staging.rcibsp.ConstantUtils;
 import staging.rcibsp.Country;
+import staging.rcibsp.DriverType;
 import staging.rcibsp.ExcelReader;
+import staging.rcibsp.WebDriverFactory;
 
 
 /**
@@ -48,14 +51,12 @@ public class TestSouscriptionUKExcel {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	enum DriverType{
-		FIREFOX, CHROME, INTERNETEXPLORER
-	};
+
 
 	@Before
 	public void setUp() throws Exception {
 		
-		 driver = this.getDriver(DriverType.FIREFOX);
+		driver = new WebDriverFactory().getDriver(DriverType.FIREFOX);
 		 //driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 		 driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		 wait = new WebDriverWait(driver, 1);
@@ -64,51 +65,12 @@ public class TestSouscriptionUKExcel {
 		 jse2 = (JavascriptExecutor)driver;
 	}
 	
-	private WebDriver getDriver( DriverType driverType){
-		WebDriver _Driver = null;
-		switch(driverType){
-			case FIREFOX:
-				 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-				 DesiredCapabilities capabilities=DesiredCapabilities.firefox();
-				 capabilities.setCapability("marionette", false);
-			     _Driver = new FirefoxDriver(capabilities);
-			    
-			     break;
-			case CHROME:
-				 System.setProperty("webdriver.chrome.driver",  System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\chromedriver_win32\\chromedriver.exe");
-				 ChromeOptions options = new ChromeOptions();
-				 options.addArguments("--start-maximized");
-				 _Driver = new ChromeDriver(options);
-				 break;	
-			case INTERNETEXPLORER:
-				// System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
-				//		 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_x64_3.8.0\\IEDriverServer.exe");
-				 
-				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
-						 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_Win32_3.8.0\\IEDriverServer.exe");
-				 capabilities = DesiredCapabilities.internetExplorer();
-				 capabilities.setCapability(InternetExplorerDriver.
-						 INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-				 //capabilities.setVersion("11");
-				 //capabilities.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
-				 //capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
-				 capabilities.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
-			     _Driver = new InternetExplorerDriver(capabilities);
-			    
-			     break;
-		}
-		 _Driver.manage().window().maximize();
-		return _Driver;
-	}
 	
-
-
 	  @Test
 	  public void testCaseSouscriptionUserExist() throws Exception {
 		  
 		  ExcelReader objExcelFile = new ExcelReader();
-		  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_UK.xlsx";
-		  List<Map<String, String>> result = objExcelFile.read(filePath, Country.UK);
+		  List<Map<String, String>> result = objExcelFile.read(ConstantUtils.INPUT_FILE_PATH_UK, Country.UK);
 		  for (Map m : result){
 			  if (m.isEmpty()){
 				  continue;

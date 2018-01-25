@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import java.util.regex.Pattern;
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.FileSystems;
 import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
@@ -34,10 +35,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
 
+import staging.rcibsp.ConstantUtils;
 import staging.rcibsp.Country;
+import staging.rcibsp.DriverType;
 import staging.rcibsp.ExcelReader;
 import staging.rcibsp.GUIException;
 import staging.rcibsp.Loader;
+import staging.rcibsp.WebDriverFactory;
 
 
 /**
@@ -60,14 +64,11 @@ public class TestSouscriptionDEMultiExcel {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	enum DriverType{
-		FIREFOX, CHROME,INTERNETEXPLORER
-	};
 
 	@Before
 	public void setUp() throws Exception {
 		
-		 driver = this.getDriver(DriverType.FIREFOX);
+		 driver = new WebDriverFactory().getDriver(DriverType.FIREFOX);
 		 driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
 		 wait = new WebDriverWait(driver, 1);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
@@ -78,56 +79,20 @@ public class TestSouscriptionDEMultiExcel {
 		 Date date = new Date(System.currentTimeMillis());
 		 String currentDateStr = sf0.format(date);
 		 String logFile = "errLogDE"+currentDateStr+".log";
-		 fileHandler = new FileHandler( System.getProperty("user.dir")
-				 					+"\\src\\errorScreenshots\\"+logFile, true);  
+		 fileHandler = new FileHandler(ConstantUtils.SCREENHOT_FOLDER_PATH +logFile, true);  
 	     LOGGER.addHandler(fileHandler);
 	     SimpleFormatter formatter = new SimpleFormatter();  
 	     fileHandler.setFormatter(formatter);
 	}
 	
-	private WebDriver getDriver( DriverType driverType){
-		WebDriver _Driver = null;
-		switch(driverType){
-			case FIREFOX:
-				 System.setProperty("webdriver.gecko.driver",  System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\geckodriver-v0.19.1-win64\\geckodriver.exe");
-				 capabilities=DesiredCapabilities.firefox();
-				 capabilities.setCapability("marionette", false);
-			     _Driver = new FirefoxDriver(capabilities);
-			  
-			     break;
-			case CHROME:
-				 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\SELENIUM_DRIVERS\\chromedriver_win32\\chromedriver.exe");
-				 ChromeOptions options = new ChromeOptions();
-				 options.addArguments("--headless");
-				 options.addArguments("--start-maximized");
-				 _Driver = new ChromeDriver(options);
-				 break;	
-			case INTERNETEXPLORER:
-				 System.setProperty("webdriver.ie.driver",  System.getProperty("user.dir")
-						 +"\\src\\SELENIUM_DRIVERS\\IEDriverServer_Win32_3.8.0\\IEDriverServer.exe");
-				 DesiredCapabilities capabilities=DesiredCapabilities.internetExplorer();
-				 capabilities.setCapability(InternetExplorerDriver.
-						 INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-				 capabilities.setVersion("11");
-			     _Driver = new InternetExplorerDriver(capabilities);
-			    
-			     break;
-		}
-		   
-	     _Driver.manage().window().maximize();
-		return _Driver;
-	}
 	
-
-
 	  @Test
 	  public void testCaseSouscriptionUserExist() throws IOException,ParseException, InterruptedException {
 		  try{
 			  ExcelReader objExcelFile = new ExcelReader();
-			  String filePath = System.getProperty("user.dir")+"\\src\\excelExportAndFileIO\\jeu_de_test_DE.xlsx";
 			  Loader loader = new Loader();
 			  loader.setReader(new ExcelReader());
-			  List<Map<String, String>> result = loader.readFile(filePath, Country.DE);
+			  List<Map<String, String>> result = loader.readFile(ConstantUtils.INPUT_FILE_PATH_DE, Country.DE);
 			  
 			  for (Map m : result){
 				  errorMessage = "";
@@ -168,9 +133,10 @@ public class TestSouscriptionDEMultiExcel {
 		  java.text.SimpleDateFormat sf = new java.text.SimpleDateFormat("dd_MM_yyyy_HHmmss");
 		  Date date = new Date(System.currentTimeMillis());
 		  String currentDateStr = sf.format(date);
-		  String outputPath = System.getProperty("user.dir")
-				  	+"\\src\\errorScreenshots\\screenshotDE"
-				  +currentDateStr+".png";
+		  String screenshotFile = "screenshotDE"+currentDateStr+".png";
+		  String outputPath = String.join(FileSystems.getDefault().getSeparator(),
+				  							ConstantUtils.DRIVER_FOLDER_PATH,
+				  							screenshotFile);
 		  Files.copy( errFile, new File(outputPath));
 		  
 	}
