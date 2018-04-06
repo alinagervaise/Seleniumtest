@@ -1,0 +1,587 @@
+avr. 05, 2018 12:02:07 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:02:07 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:02:07 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:03:06 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:37204 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '192.168.1.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+avr. 05, 2018 12:03:06 AM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 12:03:08 AM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTorg.apache.http.conn.HttpHostConnectException: Connect to localhost:37204 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '192.168.1.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver 
+
+avr. 05, 2018 12:03:08 AM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 12:15:04 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:15:04 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:15:04 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:15:14 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 12:15:16 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 12:15:20 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 12:17:21 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 12:17:21 AM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 12:17:26 AM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTElement <button class="button-unstyled remove-button" type="submit" value="Usu?" name="dwfrm_cart_shipments_i0_items_i0_deleteProduct"></button> is not clickable at point (1211.5333251953125, 302). Other element would receive the click: <a class="btn-secondary btn-smaller inverted cta-paired-link" href="https://staging-store-rcibsp.demandware.net/s/RCI_PL/About_Cookies.html?lang=pl_PL"></a>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '192.168.1.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 6ac75bbf-0bf5-455d-b25d-36b4d7041a2f 
+
+avr. 05, 2018 12:17:26 AM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 12:17:29 AM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 12:19:23 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:19:23 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:19:23 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:19:40 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 12:19:43 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 12:19:46 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 12:21:47 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 12:21:47 AM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 12:21:49 AM test.TestBase removeProduct
+INFOS: REMOVE PRODUCT DONE : OK
+
+avr. 05, 2018 12:21:49 AM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 12:21:52 AM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 12:37:24 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:37:24 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:37:24 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:37:40 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 12:37:42 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 12:37:47 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 12:39:47 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 12:39:47 AM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 12:39:54 AM test.TestBase removeProduct
+INFOS: REMOVE PRODUCT DONE : OK
+
+avr. 05, 2018 12:39:54 AM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 12:39:57 AM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 12:41:41 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:41:41 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:41:41 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:41:50 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 12:41:53 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 12:41:56 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 12:43:57 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 12:43:57 AM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 12:44:00 AM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTElement <button class="button-unstyled remove-button" type="submit" value="Usu?" name="dwfrm_cart_shipments_i0_items_i0_deleteProduct"></button> is not clickable at point (1211.5333251953125, 302). Other element would receive the click: <a class="btn-secondary btn-smaller inverted cta-paired-link" href="https://staging-store-rcibsp.demandware.net/s/RCI_PL/About_Cookies.html?lang=pl_PL"></a>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '192.168.1.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 48e7bd33-b6a0-485f-bbf1-28704539237d 
+
+avr. 05, 2018 12:44:00 AM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 12:44:08 AM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 12:50:00 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:50:00 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:50:00 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:50:10 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 12:50:12 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 12:50:16 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 12:51:17 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:51:17 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:51:17 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:51:27 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 12:51:28 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 12:51:31 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 12:56:09 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:56:09 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:56:09 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:56:20 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 12:56:22 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 12:56:25 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 12:58:25 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 12:58:25 AM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 12:58:31 AM test.TestBase removeProduct
+INFOS: REMOVE PRODUCT DONE : OK
+
+avr. 05, 2018 12:58:31 AM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 12:58:33 AM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 12:59:18 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 12:59:18 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 12:59:18 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 12:59:29 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 12:59:30 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 12:59:34 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 1:01:15 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 1:01:15 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 1:01:15 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 1:01:27 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 1:01:27 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 1:01:30 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 1:03:30 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 1:03:30 AM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 1:03:34 AM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTElement <button class="button-unstyled remove-button" type="submit" value="Usu?" name="dwfrm_cart_shipments_i0_items_i0_deleteProduct"></button> is not clickable at point (1211.5333251953125, 302). Other element would receive the click: <a class="btn-secondary btn-smaller inverted cta-paired-link" href="https://staging-store-rcibsp.demandware.net/s/RCI_PL/About_Cookies.html?lang=pl_PL"></a>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '192.168.1.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 5ae1ac48-41bc-408a-8097-b9df08164bae 
+
+avr. 05, 2018 1:03:34 AM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 1:03:38 AM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 1:04:33 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 1:04:33 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 1:04:33 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 1:04:48 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 1:04:48 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 1:04:52 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 1:04:52 AM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/shipping?lang=pl_PL
+
+avr. 05, 2018 1:04:52 AM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_PL/subscription
+
+avr. 05, 2018 1:06:54 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 1:06:54 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 1:06:54 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 1:07:05 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 1:07:07 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 1:07:11 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 11:30:03 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 11:30:03 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 11:30:03 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 11:30:16 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 11:30:19 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 11:30:22 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 11:32:23 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 11:32:23 AM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 11:32:26 AM test.TestBase removeProduct
+INFOS: REMOVE PRODUCT DONE : OK
+
+avr. 05, 2018 11:32:26 AM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 11:32:31 AM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 11:37:32 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 11:37:32 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 11:37:32 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 11:37:45 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 11:37:47 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 11:37:51 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 11:37:51 AM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/shipping?lang=pl_PL
+
+avr. 05, 2018 11:37:51 AM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_PL/subscription
+
+avr. 05, 2018 11:40:57 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 11:40:57 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 11:40:57 AM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 11:41:14 AM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 11:41:14 AM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 11:41:19 AM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 2:42:00 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.TimeoutException   Expected condition failed: waiting for at least one condition to be valid: visibility of element located by By.name: dwfrm_billing_save || element to be clickable: By.name: dwfrm_billing_save (tried for 180 second(s) with 5 SECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+avr. 05, 2018 2:42:00 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 2:44:07 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 2:44:10 PM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 2:47:34 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 2:47:34 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 2:47:34 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 2:47:48 PM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 2:47:48 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 2:47:52 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 2:47:52 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/shipping?lang=pl_PL
+
+avr. 05, 2018 2:47:52 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_PL/subscription
+
+avr. 05, 2018 2:50:00 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 2:50:00 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 2:50:00 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 2:50:11 PM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 2:50:13 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 2:50:17 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 2:52:18 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 2:52:18 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 2:52:24 PM test.TestBase removeProduct
+INFOS: REMOVE PRODUCT DONE : OK
+
+avr. 05, 2018 2:52:24 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 2:52:28 PM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 2:55:56 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 2:55:56 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 2:55:56 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 2:56:07 PM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 2:56:09 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 2:56:12 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 2:57:25 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 2:57:25 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 2:57:25 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 2:57:37 PM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 2:57:41 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 2:57:46 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 2:59:47 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 2:59:47 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 2:59:52 PM test.TestBase removeProduct
+INFOS: REMOVE PRODUCT DONE : OK
+
+avr. 05, 2018 2:59:52 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 2:59:54 PM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 05, 2018 3:06:38 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 3:06:38 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 3:06:38 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 3:06:48 PM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 3:06:49 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 3:06:52 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 3:08:26 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+avr. 05, 2018 3:08:26 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 05, 2018 3:08:26 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=6 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+avr. 05, 2018 3:08:37 PM test.TestSouscriptionPLMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED: OK!
+avr. 05, 2018 3:08:37 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_PL/login?original=%2Fs%2FRCI_PL%2Fshipping%3Flang%3Dpl_PL&lang=pl_PL
+
+avr. 05, 2018 3:08:40 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 05, 2018 3:10:40 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 05, 2018 3:10:40 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 05, 2018 3:10:42 PM test.TestBase removeProduct
+INFOS: REMOVE PRODUCT DONE : OK
+
+avr. 05, 2018 3:10:42 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 05, 2018 3:10:49 PM test.TestBase logout
+INFOS: LOG OUT : OK
+

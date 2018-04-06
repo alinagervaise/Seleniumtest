@@ -1,0 +1,88 @@
+mars 23, 2018 5:04:04 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+mars 23, 2018 5:04:04 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 23, 2018 5:04:04 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+mars 23, 2018 5:06:07 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.TimeoutException   Expected condition failed: waiting for all conditions to be valid: visibility of element located by By.xpath: //nav[@id='navigation']/ul/li[2]/a && element to be clickable: By.xpath: //nav[@id='navigation']/ul/li[2]/a (tried for 60 second(s) with 5 SECONDS interval)
+mars 23, 2018 5:06:07 PM test.TestSouscriptionUKMultiExcel removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+mars 23, 2018 5:18:54 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+mars 23, 2018 5:18:54 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 23, 2018 5:18:54 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+mars 23, 2018 5:20:57 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.TimeoutException   Expected condition failed: waiting for all conditions to be valid: visibility of element located by By.xpath: //nav[@id='navigation']/ul/li[2]/a && element to be clickable: By.xpath: //nav[@id='navigation']/ul/li[2]/a (tried for 60 second(s) with 5 SECONDS interval)
+mars 23, 2018 5:20:57 PM test.TestSouscriptionUKMultiExcel removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+mars 23, 2018 5:32:13 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+mars 23, 2018 5:32:13 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 23, 2018 5:32:13 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+mars 23, 2018 5:34:47 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+mars 23, 2018 5:34:47 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 23, 2018 5:34:47 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+mars 23, 2018 5:36:53 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"xpath","selector":"//button[@class='add-all-to-cart.product-0']"}
+Command duration or timeout: 0 milliseconds
+mars 23, 2018 5:36:53 PM test.TestSouscriptionUKMultiExcel removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+mars 23, 2018 5:42:52 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+mars 23, 2018 5:42:52 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 23, 2018 5:42:52 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+mars 23, 2018 5:44:59 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"xpath","selector":"//div[@id='ui-id-1']/div[2]/a[2]"}
+Command duration or timeout: 0 milliseconds
+mars 23, 2018 5:44:59 PM test.TestSouscriptionUKMultiExcel removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+mars 23, 2018 5:50:19 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+mars 23, 2018 5:50:19 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 23, 2018 5:50:19 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+mars 23, 2018 5:52:25 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"xpath","selector":"(//form[@id='checkout-form']/fieldset/button)[2]"}
+Command duration or timeout: 0 milliseconds
+mars 23, 2018 5:52:25 PM test.TestSouscriptionUKMultiExcel removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+

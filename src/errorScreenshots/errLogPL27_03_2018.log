@@ -1,0 +1,69 @@
+mars 27, 2018 3:21:17 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+mars 27, 2018 3:21:17 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 3:21:17 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 27, 2018 3:23:22 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.TimeoutException   Expected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on WINDOWS (a520f5a2-aa07-4c3a-9bdc-c93efbb4365c)] -> xpath: //nav[@id='navigation']/div/ul/li[2]/div/ul/li[4]/a] (tried for 120 second(s) with 5 SECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+mars 27, 2018 3:28:10 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+mars 27, 2018 3:28:10 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 3:28:10 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 27, 2018 3:30:17 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"css selector","selector":"#ui-id-2 > div.actions > a.action.dialog-cart-show"}
+Command duration or timeout: 0 milliseconds
+mars 27, 2018 3:34:32 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+mars 27, 2018 3:34:32 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 3:34:32 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 27, 2018 3:36:37 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+mars 27, 2018 3:50:32 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+mars 27, 2018 3:50:32 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 3:50:32 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 27, 2018 3:52:40 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"xpath","selector":"//form/div/button[@class='product-null-Mini']"}
+Command duration or timeout: 0 milliseconds
+mars 27, 2018 4:02:03 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+mars 27, 2018 4:02:03 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 4:02:03 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 27, 2018 4:02:10 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.InvalidSelectorException   The given selector //div[2]/form/div/button'] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //div[2]/form/div/button'] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 0 milliseconds

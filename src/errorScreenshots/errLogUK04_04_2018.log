@@ -1,0 +1,719 @@
+avr. 04, 2018 5:13:15 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 5:13:15 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:13:15 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 5:13:24 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 5:13:25 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 5:13:28 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 5:25:28 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 5:25:28 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:25:28 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 5:25:37 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 5:25:40 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 5:25:44 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 5:32:38 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 5:32:38 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:32:38 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 5:32:46 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 5:32:48 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 5:32:51 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 5:34:44 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 5:34:44 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:34:44 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 5:34:53 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 5:34:55 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 5:34:58 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 5:40:38 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 5:40:38 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:40:38 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 5:40:47 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 5:40:50 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 5:40:53 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 5:40:53 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 5:40:53 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:40:53 PM test.TestSouscriptionUKMultiExcel runSelenium
+INFOS: USER robertlavoisier@mailinator.com  IS CONNECTED
+
+avr. 04, 2018 5:40:53 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 5:40:53 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:40:56 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 5:40:56 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:40:56 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 5:40:56 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:40:57 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: SET Vehicle insurance Date FIELD TO: jeu., 01 05 00:00:00 2017
+
+avr. 04, 2018 5:42:58 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.ElementNotVisibleException   Element is not currently visible and so may not be interacted with
+Command duration or timeout: 0 milliseconds
+avr. 04, 2018 5:42:58 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 04, 2018 5:43:03 PM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTElement <button class="button-unstyled remove-button" type="submit" value="Remove" name="dwfrm_cart_shipments_i0_items_i0_deleteProduct"></button> is not clickable at point (1202.0333251953125, 296). Other element would receive the click: <div class="inline-block cookie-button-wrapper"></div>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 4b516167-e310-4f9e-b47d-9e4d49907082 
+
+avr. 04, 2018 5:43:03 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 04, 2018 5:43:07 PM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 04, 2018 5:43:07 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:43:07 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 2:{firstname=Jean , Postal Code=SW1A 2AA, Card number=4917610000000000, confirm password=JSK-man?, City=London, phone number=448006891001, Security number=345, lastname=Renaud, Brand=Audi, password=JSK-man?, Property number / Name=33, Vehicle Insurance Date=dim., 02 05 00:00:00 2017, Expiry date=sam., 08 01 00:00:00 2020, Registration=BJ82 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=WBAWR3C55AP462424, date of birth=ven., 03 02 00:00:00 2018, email=jeanrenauld@mailinator.com}
+
+avr. 04, 2018 5:43:17 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <button class="add-all-to-cart product-0 button-full-width" type="submit" value="Add All to Cart"></button> is not clickable at point (1065.5, 324.3999938964844). Other element would receive the click: <a class="btn-secondary btn-smaller inverted cta-paired-link" href="#" id="deleteMeetingClose"></a>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 4b516167-e310-4f9e-b47d-9e4d49907082
+avr. 04, 2018 5:43:17 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 04, 2018 5:45:18 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 04, 2018 5:45:25 PM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 04, 2018 5:45:25 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:45:25 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 3:{firstname=Neil, Postal Code=SW1A 2AB, Card number=4917610000000000, confirm password=Yno#wuc8, City=London, phone number=448006891002, Security number=345, lastname=Denver, Brand=Audi, password=Yno#wuc8, Property number / Name=34, Vehicle Insurance Date=dim., 03 05 00:00:00 2017, Expiry date=sam., 08 01 00:00:00 2020, Registration=BJ83 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=WBAWR3C55AP462424, date of birth=jeu., 03 03 00:00:00 1955, email=neildenver@mailinator.com}
+
+avr. 04, 2018 5:45:35 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <button class="add-all-to-cart product-0 button-full-width" type="submit" value="Add All to Cart"></button> is not clickable at point (1065.5, 324.3999938964844). Other element would receive the click: <a class="btn-secondary btn-smaller inverted cta-paired-link" href="#" id="deleteMeetingClose"></a>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 4b516167-e310-4f9e-b47d-9e4d49907082
+avr. 04, 2018 5:45:35 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 04, 2018 5:47:35 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 04, 2018 5:47:40 PM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 04, 2018 5:47:40 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:47:40 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 4:{firstname=Jean , Postal Code=SW1A 2AA, Card number=4917610000000000, confirm password=JSK-man?, City=London, phone number=448006891001, Security number=345, lastname=Renaud, Brand=Audi, password=JSK-man?, Property number / Name=33, Vehicle Insurance Date=dim., 02 05 00:00:00 2017, Expiry date=sam., 08 01 00:00:00 2020, Registration=BJ82 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=WBAWR3C55AP462424, date of birth=ven., 03 02 00:00:00 2018, email=jeanrenauld@mailinator.com}
+
+avr. 04, 2018 5:47:49 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   Element <button class="add-all-to-cart product-0 button-full-width" type="submit" value="Add All to Cart"></button> is not clickable at point (1065.5, 324.3999938964844). Other element would receive the click: <a class="btn-secondary btn-smaller inverted cta-paired-link" href="#" id="deleteMeetingClose"></a>
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.123', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: true, browserName: firefox, cssSelectorsEnabled: true, databaseEnabled: true, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: false, platform: WINDOWS, platformName: WINDOWS, rotatable: false, takesScreenshot: true, version: 52.3.0, webStorageEnabled: true}
+Session ID: 4b516167-e310-4f9e-b47d-9e4d49907082
+avr. 04, 2018 5:47:49 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 04, 2018 5:49:49 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 04, 2018 5:49:55 PM test.TestBase logout
+INFOS: LOG OUT : OK
+
+avr. 04, 2018 5:50:40 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 5:50:40 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:50:40 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 5:50:55 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 5:50:57 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 5:51:00 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 5:51:00 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 5:51:00 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:51:00 PM test.TestSouscriptionUKMultiExcel runSelenium
+INFOS: USER robertlavoisier@mailinator.com  IS CONNECTED
+
+avr. 04, 2018 5:51:00 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 5:51:00 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:51:04 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 5:51:04 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:51:04 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 5:51:04 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:51:05 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: SET Vehicle insurance Date FIELD TO: jeu., 01 05 00:00:00 2017
+
+avr. 04, 2018 5:51:06 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 04, 2018 5:51:06 PM test.TestSouscriptionUKMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 04, 2018 5:56:24 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 5:56:24 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 5:56:24 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 5:56:34 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 5:56:38 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 5:56:40 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 5:56:40 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 5:56:40 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 5:56:40 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:56:40 PM test.TestSouscriptionUKMultiExcel runSelenium
+INFOS: USER robertlavoisier@mailinator.com  IS CONNECTED
+
+avr. 04, 2018 5:56:40 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 5:56:40 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 5:56:40 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:56:43 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 5:56:43 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 5:56:43 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:56:43 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 5:56:43 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 5:56:43 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 5:56:44 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: SET Vehicle insurance Date FIELD TO: jeu., 01 05 00:00:00 2017
+
+avr. 04, 2018 5:56:45 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 04, 2018 5:56:45 PM test.TestSouscriptionUKMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 04, 2018 5:56:47 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder
+
+avr. 04, 2018 5:56:47 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder 
+
+avr. 04, 2018 11:29:52 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 11:29:52 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 11:29:52 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 11:30:06 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 11:30:08 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 11:30:12 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 11:30:12 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:30:12 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:30:12 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:30:12 PM test.TestSouscriptionUKMultiExcel runSelenium
+INFOS: USER robertlavoisier@mailinator.com  IS CONNECTED
+
+avr. 04, 2018 11:30:13 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:30:13 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:30:13 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:30:15 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:30:15 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:30:15 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:30:15 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:30:15 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:30:15 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:30:17 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: SET Vehicle insurance Date FIELD TO: jeu., 01 05 00:00:00 2017
+
+avr. 04, 2018 11:30:18 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 04, 2018 11:30:18 PM test.TestSouscriptionUKMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 04, 2018 11:30:21 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder
+
+avr. 04, 2018 11:30:21 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder 
+
+avr. 04, 2018 11:37:03 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 11:37:03 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 11:37:03 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 11:37:13 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 11:37:16 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 11:37:19 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 11:37:20 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:37:20 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping---true
+
+avr. 04, 2018 11:37:20 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:37:20 PM test.TestSouscriptionUKMultiExcel runSelenium
+INFOS: USER robertlavoisier@mailinator.com  IS CONNECTED
+
+avr. 04, 2018 11:37:20 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:37:20 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping---true
+
+avr. 04, 2018 11:37:20 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:37:22 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:37:22 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription---true
+
+avr. 04, 2018 11:37:22 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:37:22 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:37:22 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription---true
+
+avr. 04, 2018 11:37:22 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:37:24 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: SET Vehicle insurance Date FIELD TO: jeu., 01 05 00:00:00 2017
+
+avr. 04, 2018 11:37:24 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 04, 2018 11:37:24 PM test.TestSouscriptionUKMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 04, 2018 11:37:27 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder
+
+avr. 04, 2018 11:37:27 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder ---false
+
+avr. 04, 2018 11:40:47 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 11:40:47 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 11:40:47 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 11:40:57 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 11:41:00 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 11:41:03 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 11:41:04 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:41:04 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping---true
+
+avr. 04, 2018 11:41:04 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:41:04 PM test.TestSouscriptionUKMultiExcel runSelenium
+INFOS: USER robertlavoisier@mailinator.com  IS CONNECTED
+
+avr. 04, 2018 11:41:04 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:41:04 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping---true
+
+avr. 04, 2018 11:41:04 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:41:06 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:41:06 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription---true
+
+avr. 04, 2018 11:41:06 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:41:06 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:41:06 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription---true
+
+avr. 04, 2018 11:41:06 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:41:07 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: SET Vehicle insurance Date FIELD TO: jeu., 01 05 00:00:00 2017
+
+avr. 04, 2018 11:41:07 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 04, 2018 11:41:07 PM test.TestSouscriptionUKMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 04, 2018 11:41:10 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder
+
+avr. 04, 2018 11:41:10 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder ---false
+
+avr. 04, 2018 11:43:28 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 11:43:28 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 11:43:28 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 11:43:39 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 11:43:41 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 11:43:45 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 11:43:45 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:43:45 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping---true
+
+avr. 04, 2018 11:43:45 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:43:45 PM test.TestSouscriptionUKMultiExcel runSelenium
+INFOS: USER robertlavoisier@mailinator.com  IS CONNECTED
+
+avr. 04, 2018 11:43:45 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:43:45 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping---true
+
+avr. 04, 2018 11:43:45 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:43:47 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:43:47 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription---true
+
+avr. 04, 2018 11:43:47 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:43:47 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:43:47 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription---true
+
+avr. 04, 2018 11:43:47 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:43:49 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: SET Vehicle insurance Date FIELD TO: jeu., 01 05 00:00:00 2017
+
+avr. 04, 2018 11:43:49 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 04, 2018 11:43:49 PM test.TestSouscriptionUKMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 04, 2018 11:43:52 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder
+
+avr. 04, 2018 11:43:52 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder ---false
+
+avr. 04, 2018 11:48:16 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionUKMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_UK.xlsx
+
+avr. 04, 2018 11:48:16 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 04, 2018 11:48:16 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{firstname=Robert, Postal Code=SW1A 1AA, Card number=4917610000000000, confirm password=Ps1960m+, City=London, phone number=448006891000, Security number=547, lastname=Lavoisier, Brand=Audi, password=Ps1960m+, Property number / Name=32, Vehicle Insurance Date=jeu., 01 05 00:00:00 2017, Expiry date=mer., 07 01 00:00:00 2020, Registration=BJ81 TBS, Model=A6 IV, Street=avenue du pavé neuf, Country=United Kingdom, VIN=1GCHG35C881135218, date of birth=lun., 11 05 00:00:00 1990, email=robertlavoisier@mailinator.com}
+
+avr. 04, 2018 11:48:25 PM test.TestSouscriptionUKMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 04, 2018 11:48:27 PM test.TestBase login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping
+
+avr. 04, 2018 11:48:30 PM test.TestBase login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 04, 2018 11:48:30 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:48:30 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping---true---true
+
+avr. 04, 2018 11:48:30 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:48:30 PM test.TestSouscriptionUKMultiExcel runSelenium
+INFOS: USER robertlavoisier@mailinator.com  IS CONNECTED
+
+avr. 04, 2018 11:48:30 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping
+
+avr. 04, 2018 11:48:30 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping---true---true
+
+avr. 04, 2018 11:48:30 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:48:33 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:48:33 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription---true---true
+
+avr. 04, 2018 11:48:33 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:48:33 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription
+
+avr. 04, 2018 11:48:33 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription---true---true
+
+avr. 04, 2018 11:48:33 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:48:34 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: SET Vehicle insurance Date FIELD TO: jeu., 01 05 00:00:00 2017
+
+avr. 04, 2018 11:48:34 PM test.TestSouscriptionUKMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 04, 2018 11:48:34 PM test.TestSouscriptionUKMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 04, 2018 11:48:37 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder
+
+avr. 04, 2018 11:48:37 PM test.TestBase checkCurrentURL
+INFOS: EXPECTED PAGE IS:https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder---true---true
+
+avr. 04, 2018 11:48:37 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 04, 2018 11:48:41 PM test.TestSouscriptionUKMultiExcel makePayment
+INFOS: CLICK ON BUTTON 'Submit' 
+
+avr. 04, 2018 11:51:42 PM test.TestSouscriptionUKMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.TimeoutException   Expected condition failed: waiting for url to contain "https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed". Current url: "https://staging-store-rcibsp.demandware.net/s/RCI_UK/confirmationorder?order_token=ABL9OarAcMCN9xvoPiAqVdVVZpRqZzymYfWUHjLd4w4&orderKey=RCIBANK%5EBSPUKKEYCOVER%5EGBSTAGING00011518&paymentStatus=AUTHORISED&paymentAmount=2999&paymentCurrency=GBP&mac=5087bc5faf471ea0a1bf83464968a918" (tried for 180 second(s) with 5 SECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '192.168.1.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+avr. 04, 2018 11:51:42 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 04, 2018 11:53:02 PM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTorg.apache.http.conn.HttpHostConnectException: Connect to localhost:26208 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '192.168.1.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver 
+
+avr. 04, 2018 11:53:02 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+

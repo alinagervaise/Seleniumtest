@@ -1,17 +1,22 @@
 package staging.rcibsp;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public class WebDriverFactory {
@@ -25,13 +30,31 @@ public class WebDriverFactory {
 			case FIREFOX:
 				if (osName.toLowerCase().contains("windows")){
 					 System.setProperty("webdriver.gecko.driver", ConstantUtils.FIREFOX_DRIVER_PATH_WIN);
+					
 				}
 				else{
 					System.setProperty("webdriver.gecko.driver", ConstantUtils.FIREFOX_DRIVER_PATH_LINUX);
 				}
-				 capabilities=DesiredCapabilities.firefox();
-				 capabilities.setCapability("marionette", false);
-			     _Driver = new FirefoxDriver(capabilities);
+				capabilities=DesiredCapabilities.firefox();
+				//capabilities= new DesiredCapabilities("firefox", "", Platform.WINDOWS);
+				capabilities.setBrowserName("firefox");
+				capabilities.setCapability("marionette", false);
+				//capabilities.setCapability("version", "59.0");
+				//capabilities.setCapability("version", "47.0");
+				capabilities.setCapability("firefox binary", ConstantUtils.FIREFOXPATH);
+				
+			    _Driver = new FirefoxDriver(capabilities);
+//				try {
+//					_Driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+//				} catch (MalformedURLException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+				//FirefoxBinary firefoxBinary = new FirefoxBinary();
+				//firefoxBinary.addCommandLineOptions("--headless");
+				//FirefoxOptions firefoxOptions = new FirefoxOptions();
+				//firefoxOptions.setBinary(firefoxBinary);
+				//_Driver = new FirefoxDriver(firefoxOptions);
 			  
 			     break;
 			case CHROME:

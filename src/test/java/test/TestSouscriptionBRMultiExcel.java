@@ -42,6 +42,7 @@ import staging.rcibsp.Country;
 import staging.rcibsp.DriverType;
 import staging.rcibsp.ExcelReader;
 import staging.rcibsp.GUIException;
+import staging.rcibsp.GUILogger;
 import staging.rcibsp.Loader;
 import staging.rcibsp.WebDriverFactory;
 import staging.rcibsp.ConstantUtils;
@@ -51,108 +52,95 @@ import staging.rcibsp.ConstantUtils;
  * @author galinabikoro
  *
  */
-public class TestSouscriptionBRMultiExcel {
-	private WebDriver driver;
-	private WebDriverWait wait;
-	private final String BASE_URL = "https://staging-store-rcibsp.demandware.net";
-	private boolean acceptNextAlert = true;
-	private StringBuffer verificationErrors = new StringBuffer();
-	private java.text.SimpleDateFormat sf;
-	private Calendar c;
-	private JavascriptExecutor jse2;
-	private DesiredCapabilities capabilities;
-	 public static Logger LOGGER = Logger.getLogger(TestSouscriptionBRMultiExcel.class.getName());  
-	 public FileHandler fileHandler;  
-	 String errorMessage = "";
+public class TestSouscriptionBRMultiExcel extends TestBase implements TestInterface{
 	/**
 	 * @throws java.lang.Exception
+	 * TODO: Identify elements where the xpath is required and why?
+	 *        
+	 *       Product menu: no ID, no name just pure link
+	 *       
+	 * 		 Identity the elements for which the ID was dynamic
+	 *        Login, Password
+	 * 
 	 */
 
 	@Before
 	public void setUp() throws Exception {
+		 this.setProperties();
+		 this.setCaptureFile("screenshotBR");
 		 
-		 driver = new WebDriverFactory().getDriver(DriverType.FIREFOX);
-		 driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
-		 wait = new WebDriverWait(driver, 1);
+		 driver = new WebDriverFactory().getDriver(DriverType.FIREFOX); 
+		 //driver.manage().timeouts().implicitlyWait(ConstantUtils.IMPLICIT_WAIT_TIME, TimeUnit.MINUTES);
+		 driver.manage().timeouts().implicitlyWait(Long.parseLong(properties.getProperty("IMPLICIT_WAIT_TIME")), TimeUnit.MINUTES);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
 		 jse2 = (JavascriptExecutor)driver;
-		 
-		 java.text.SimpleDateFormat sf0 = new java.text.SimpleDateFormat("dd_MM_yyyy");
-		 Date date = new Date(System.currentTimeMillis());
-		 String currentDateStr = sf0.format(date);
-		 String logFile = "errLogBR"+currentDateStr+".log";
-		 String handlerLogFile = String.join(ConstantUtils.SCREENHOT_FOLDER_PATH, logFile);
-		 fileHandler = new FileHandler( handlerLogFile, true);  
-		
-	     LOGGER.addHandler(fileHandler);
-	     SimpleFormatter formatter = new SimpleFormatter();  
-	     fileHandler.setFormatter(formatter);
+	
+	     this.setHandler("errLogBR");
 	}
 	
-	
 	  @Test
-	  public void testCaseSouscriptionUserExist() throws IOException,ParseException, InterruptedException {
+ public void testCaseSouscriptionUserExist() throws IOException,ParseException, InterruptedException {
+		  
 		  try{
-			  ExcelReader objExcelFile = new ExcelReader();
-			  String filePath = String.join(ConstantUtils.INPUT_FILE_PATH, "jeu_de_test_BR.xlsx");
+			  isTestPassed = true;
+			  
 			  Loader loader = new Loader();
 			  loader.setReader(new ExcelReader());
-			  List<Map<String, String>> result = loader.readFile(filePath, Country.BR);
-			  
+			  List<Map<String, String>> result = loader.readFile(ConstantUtils.INPUT_FILE_PATH_BR, Country.BR);
+			  String infotest = "EXECUTE "+ this.getClass().getSimpleName()+ "\n";
+			  infotest += "READING DATA FROM FILE: "+ ConstantUtils.INPUT_FILE_PATH_BR +"\n";
+			  LOGGER.info(infotest);
+			  int count = 0;
 			  for (Map m : result){
 				  errorMessage = "";
 				  if (m.isEmpty()){
 					  continue;
 				  }
-				 
-				  LOGGER.info("Execute Souscription for :\n"+ m +"\n");
+				  count += 1;
+				  LOGGER.info("BEGINNING TEST: \n");
+				  LOGGER.info("for data set " + count +":"+ m +"\n");
 				  try{
 				    	runSelenium(m);
+				    	LOGGER.info("END OF TEST FOR DATA SET: " + count +" SUCCESS!\n");
 				  }
 				  catch(GUIException e){
 					  if (e != null){
-				
-						  generateLog(e);
-					
-					  LOGGER.log(Level.WARNING, e.getMessage());
-					  logout(driver);
-					  continue;
-					  }
-					  
+						  takeScreenshot(e);
+						  logout(driver);
+						  LOGGER.info("END OF TEST FOR DATE SET :" + count +" FAIL!\n");
+						  isTestPassed = false;
+						  continue;
+					  }  
 				  }
 				  catch(Exception ex){
 					  LOGGER.log(Level.SEVERE, ex.getClass().getName()+ "   "+ex.getMessage());
-					  generateLog(ex);
-				  
+					  logout(driver);
+					  continue;
 				  }
-				  
 		  }
 		  }catch(IOException ex){
-			  generateLog(ex);
+			  LOGGER.log(Level.SEVERE, ex.getClass().getName()+ "   "+ex.getMessage());
 		  }
 	   
 	  }
-
-	private void generateLog(Exception ex) throws IOException {
-		File errFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		  java.text.SimpleDateFormat sf = new java.text.SimpleDateFormat("dd_MM_yyyy_HHmmss");
-		  Date date = new Date(System.currentTimeMillis());
-		  String currentDateStr = sf.format(date);
-		  String screenshotFile = "screenshotBR"+currentDateStr+".png";
-		  String outputPath = String.join(FileSystems.getDefault().getSeparator(),
-				  							ConstantUtils.DRIVER_FOLDER_PATH,
-				  							screenshotFile);
-		  Files.copy( errFile, new File(outputPath));
-		  
-	}
+	
 
 	public void runSelenium(Map<String, String> resultSet) throws ParseException, InterruptedException, GUIException {
-		driver.get(BASE_URL + "/s/RCI_BR/");
-	
-	    this.selecProduct(driver, resultSet);
-	    login(driver, resultSet);
-	    String URL = driver.getCurrentUrl();
+		//driver.get(BASE_URL + "/s/RCI_BR/");
+		
+		driver.get(properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_BR_URL"));
+		
+	    this.selectProduct(driver, resultSet);
+	    String expectedURL = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_BR_URL")
+		+ properties.getProperty("LOGIN_URL");
+	    login(driver, expectedURL, resultSet);
+	    expectedURL = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_BR_URL")
+		+ properties.getProperty("SHIPPING_URL");
+	    this.checkCurrentURL(driver, expectedURL, LOGGER);
+	    LOGGER.log(Level.INFO, "USER "+resultSet.get("email")+ "  IS CONNECTED\n");
+
+
 	   
 	    By bySaveBill = By.cssSelector("button[name=\"dwfrm_billing_save\"]");
 	    //By bySaveBill = By.name("dwfrm_billing_save");
@@ -169,75 +157,108 @@ public class TestSouscriptionBRMultiExcel {
 
 	    makePayment(driver, resultSet);
 		
-	   // WebElement el = driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i"));
-	    
-	    new FluentWait<WebDriver>(driver)
-	    .withTimeout(1, TimeUnit.MINUTES)
-	    .pollingEvery(2, TimeUnit.SECONDS)
-	    .ignoring(WebDriverException.class)
-	    .until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_PL/orderconfirmed"));
-	    
+	   //http://staging-store-rcibsp.demandware.net/s/RCI_BR/produtos/BR-P-MAINTENANCE.html?lang=pt_BR
+	    //String expectedUrl = "https://staging-store-rcibsp.demandware.net/s/RCI_BR/orderconfirmed";
+	    String expectedUrl =properties.getProperty("BASE_URL") 
+	    					+ properties.getProperty("COUNTRY_BR_URL")+ properties.getProperty("PAYMENT_CONFIRMATION_URL");
+		 new FluentWait<WebDriver>(driver)
+			.withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+			.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
+		    .ignoring(WebDriverException.class)
+		    .until(ExpectedConditions.urlContains(expectedUrl));
+		this.checkCurrentURL(driver, expectedUrl, LOGGER);
+		
+	     LOGGER.log(Level.INFO,"PAYMENT COMPLETED WITH SUCCESS!\n");
+		isTestPassed = true;
 	    logout(driver);
 	   
 	}
-	private void logout(WebDriver driver) {
-		By byMenuLogout = By.xpath("//div[@class='header-banner-right']/ul/li/a");
-		new FluentWait<WebDriver>(driver)
-	    .withTimeout(2, TimeUnit.MINUTES)
-	    .pollingEvery(2, TimeUnit.SECONDS)
-	    .ignoring(WebDriverException.class)
-	    .until(ExpectedConditions.elementToBeClickable(byMenuLogout));
-		driver.findElement(byMenuLogout).click();
-		driver.findElement(By.xpath("//span[@class='account-logout']/a")).click();
+	
+	
+	public void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
 		
-	}
-	private void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
-		
-		
-		
+		String errorMessage = "";
+		String successMessage = "";
+		boolean errorExist = false;
+		String field = "";
+		String xPath = "";
+		//String URL = driver.getCurrentUrl();
+		//String expectedUrl = "https://staging-store-rcibsp.demandware.net/s/RCI_BR/subscription";
+		//this.checkCurrentURL(driver, expectedUrl, LOGGER);
+	
+		field = "VIN";
+		successMessage = "SET "+ field +" FIELD TO : " + resultSet.get("VIN");
+		xPath = "//*[@id='dwfrm_billing_subscriptionInformation_vin']";
+	    // WebElement vinElement = driver.findElement(By.xpath(xPath));
 	    WebElement vinElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vin"));
 	    jse2.executeScript("arguments[0].scrollIntoView()", vinElement); 
 		vinElement.clear();
 	    vinElement.sendKeys(resultSet.get("VIN"));
+	    vinElement.sendKeys(Keys.TAB);
+	    errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	    errorExist  |= !( errorMessage.isEmpty());
 	 
-	    
+	    field = "Registration number";
+	    successMessage = "SET "+ field +" FIELD TO : " + resultSet.get("Registration number");
+	    xPath = "//*[@id='dwfrm_billing_subscriptionInformation_plate']";
+	    //WebElement plateElement = driver.findElement(By.xpath(xPath));
 	    WebElement plateElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate"));
 	    plateElement.clear();
 	    plateElement.sendKeys(resultSet.get("Registration number"));
-	    
+	    plateElement.sendKeys(Keys.TAB);
+	    errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	    errorExist  |= !( errorMessage.isEmpty());
 	
 	    By byTermConditions = By.id("dwfrm_billing_subscriptionInformation_agreeTerms");
 	    WebElement termConditionsElement = driver.findElement( byTermConditions);
 	    jse2.executeScript("arguments[0].scrollIntoView()", termConditionsElement); 
 	    new FluentWait<WebDriver>(driver)
-	    .withTimeout(1, TimeUnit.MINUTES)
-	    .pollingEvery(2, TimeUnit.SECONDS)
+	    .withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+		.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
 	    .ignoring(WebDriverException.class)
 	    .until(ExpectedConditions.elementToBeClickable(termConditionsElement));
 	    jse2.executeScript("arguments[0].click()", termConditionsElement); 
 	    
 	    driver.findElement(By.name("dwfrm_billing_save")).click();
-		//logError(driver);
+	    LOGGER.log(Level.INFO, "CLICK AGREE ON TERMS : OK!\n");
+		GUILogger.raiseError(errorExist);
 	}
 	
-	public void selecProduct(WebDriver driver, Map<String, String> resultSet) throws ParseException{
+	public void selectProduct(WebDriver driver, Map<String, String> resultSet) throws GUIException, ParseException{
 		
-		 driver.findElement(By.cssSelector("ul.menu-category.level-1 li:nth-of-type(1) a")).click();
-		 
-		 driver.findElement(By.xpath("//div[@data-itemid='BR-P-MAINTENANCE']")).click();
-		 
-		 new Select(driver.findElement(By.id("va-VehicleVersion"))).selectByVisibleText(resultSet.get("Model"));
+		
+		//driver.findElement(By.linkText("REVISÃO + FÁCIL")).click();
+		driver.findElement(By.cssSelector("ul.menu-category.level-1 li:nth-of-type(1) a")).click();
+		driver.findElement(By.cssSelector("ul.level-2-menu.menu-vertical li:nth-of-type(3) a")).click();
+		
+		WebElement vehicleVersionElement = driver.findElement(By.id("va-VehicleVersion"));
+		 jse2.executeScript("arguments[0].scrollIntoView()", vehicleVersionElement);
+		new Select(driver.findElement(By.id("va-VehicleVersion"))).selectByVisibleText(resultSet.get("Model"));
 		 
 		 new Select(driver.findElement(By.id("va-duration"))).selectByVisibleText(resultSet.get("Souscription duration"));
-		 
-		 new Select(driver.findElement(By.cssSelector("#va-mileage"))).selectByVisibleText(resultSet.get("Mileage covered"));
+		 driver.findElement(By.id("va-duration")).sendKeys(Keys.TAB);
+		 //By byMileage = By.cssSelector("#va-mileage");
+		 By byMileage =By.id("va-mileage");
+//		 new FluentWait<WebDriver>(driver)
+//		    .withTimeout(4, TimeUnit.MINUTES)
+//		    .pollingEvery(2, TimeUnit.SECONDS)
+//		    .ignoring(WebDriverException.class)
+//		    .until(ExpectedConditions.elementToBeClickable(byMileage));
+//		 new FluentWait<WebDriver>(driver)
+//		 	.withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+//			.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
+//		    .ignoring(WebDriverException.class)
+//		    .until(ExpectedConditions.elementToBeClickable(byMileage));
+//		
+		 new Select(driver.findElement(byMileage)).selectByVisibleText(resultSet.get("Mileage covered"));
 		    
 		
 		    
-		 By bySubProduct = By.cssSelector("a.add-all-to-cart.product-0");
+		By bySubProduct = By.cssSelector("a.add-all-to-cart.product-0");
+		
 		 new FluentWait<WebDriver>(driver)
-		    .withTimeout(1, TimeUnit.MINUTES)
-		    .pollingEvery(2, TimeUnit.SECONDS)
+		 	.withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+			.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
 		    .ignoring(WebDriverException.class)
 		    .until(ExpectedConditions.elementToBeClickable(bySubProduct));
 		 WebElement subProductElement = driver.findElement(bySubProduct);
@@ -249,8 +270,9 @@ public class TestSouscriptionBRMultiExcel {
 		driver.findElement(By.id("vehiclecurrentmilage")).clear();
 		driver.findElement(By.id("vehiclecurrentmilage")).sendKeys(resultSet.get("Actual Mileage"));
 		
-		WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
-		datepicker.click();
+		//WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
+		//datepicker.click();
+		driver.findElement(By.id("vehicleregistrationdate")).click();
 		String strCarDate = resultSet.get("Car registration date");
 		Date dateVehicle =  sf.parse(strCarDate);
 		c.setTime(dateVehicle);
@@ -258,17 +280,32 @@ public class TestSouscriptionBRMultiExcel {
 		new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
 		driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
 		
-		driver.findElement(By.cssSelector("button.product-0")).click();
-		//driver.findElement(By.xpath("button.product-0")).click();
+		driver.findElement(By.id("vehicleregistrationdate")).sendKeys(Keys.TAB);
+		//driver.findElement(By.cssSelector("button.product-0")).click();
+		//By comprarBy = By.xpath("//button[@id='actionlink']");
+		By comprarBy = By.id("actionlink");
+		//By comprarBy = By.cssSelector("button.product-0");
+		//By comprarBy = By.xpath("//div[@id='firstStep']/button");
+		//By comprarBy = By.xpath("//div[7]/div[2]/button");
+//		 new FluentWait<WebDriver>(driver)
+//		    .withTimeout(5, TimeUnit.MINUTES)
+//		    .pollingEvery(2, TimeUnit.SECONDS)
+//		    .ignoring(WebDriverException.class)
+//		    .until(ExpectedConditions.elementToBeClickable(comprarBy)).click();
+//		
+		//driver.findElement(comprarBy).sendKeys(Keys.TAB);
+		driver.findElement(comprarBy).sendKeys(Keys.ENTER);
+		//driver.findElement(comprarBy).click();
 		
-		driver.findElement(By.cssSelector("a.action.dialog-cart-show")).click();
+		//driver.findElement(By.cssSelector("a.action.dialog-cart-show")).click();
 		
 		By byAddToCart = By.name("dwfrm_cart_checkoutCart");
 		 new FluentWait<WebDriver>(driver)
-		    .withTimeout(1, TimeUnit.MINUTES)
-		    .pollingEvery(2, TimeUnit.SECONDS)
+		 	.withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+			.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
 		    .ignoring(WebDriverException.class)
 		    .until(ExpectedConditions.elementToBeClickable(byAddToCart));
+		LOGGER.log(Level.INFO, "PRODUCT WAS SELECTED : OK! ");
 		driver.findElement(byAddToCart).click();
 		
 		
@@ -276,22 +313,29 @@ public class TestSouscriptionBRMultiExcel {
 		 
 	}
 	
-	private void logError(WebDriver driver) throws GUIException {
-		String errorMessage = getGUIError(driver);
-		if ((errorMessage != null )&&(!errorMessage.isEmpty())){
-			throw new GUIException(errorMessage);
-		}
-	}
-	private void makePayment(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
+	
+	public void makePayment(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
+		String field = "";
+		String xPath = "";
+		String errorMessage = "";
+		String successMessage = "";
+		boolean errorExist = false;
+		field = "CONTINUE TO ORDER";
+		LOGGER.log(Level.INFO, "CLICK ON BUTTON  '"+ field + "' \n");
+		xPath = "//*[@name='dwfrm_billing_save']";
 		By byMakePayment = By.name("dwfrm_billing_save");
 		 new FluentWait<WebDriver>(driver)
-		    .withTimeout(1, TimeUnit.MINUTES)
-		    .pollingEvery(2, TimeUnit.SECONDS)
+		 	.withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+			.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
 		    .ignoring(WebDriverException.class)
 		    .until(ExpectedConditions.elementToBeClickable(byMakePayment));
 		WebElement billingSaveElment = driver.findElement(byMakePayment);
 		jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
 		billingSaveElment.click();
+		//String expectedURL = "https://staging-store-rcibsp.demandware.net/s/RCI_BR/placeorder";
+		String expectedURL = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_BR_URL")
+		+ properties.getProperty("PLACE_ORDER_URL");
+		//this.checkCurrentURL(driver, expectedURL, LOGGER);
 		
 		
 	    driver.findElement(By.id("is-WorldPay")).click();
@@ -300,50 +344,53 @@ public class TestSouscriptionBRMultiExcel {
 	    jse2.executeScript("arguments[0].scrollIntoView()", placeOrderElement); 
 	    placeOrderElement.click();
 	    
-	    driver.findElement(By.id("cardNumber")).clear();
-	    //System.out.println(""+resultSet.get("Card number"));
-	    driver.findElement(By.id("cardNumber")).sendKeys(resultSet.get("Card number"));
+	    field = "Card number";
+	    xPath = "//input[@name='cardNumber']";
+	    successMessage = "SET '"+ field +"' VALUE TO : " +resultSet.get("Card number");
+	    WebElement cardNumberElement = driver.findElement(By.id("cardNumber"));
+	    cardNumberElement.clear();
+	    cardNumberElement.sendKeys(resultSet.get("Card number"));
+	    cardNumberElement.sendKeys(Keys.RETURN);
+	    //errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	   // errorExist  |= !(errorMessage == null || errorMessage.isEmpty());
 	    
-	    new Select(driver.findElement(By.id("expiryMonth"))).selectByValue(String.format("%02d",
-	    		Integer.parseInt(resultSet.get("Expiry Month"))));
-		
-	    new Select(driver.findElement(By.id("expiryYear"))).selectByValue(resultSet.get("Expiry Year"));
-	   
-	    driver.findElement(By.id("securityCode")).clear();
-	    driver.findElement(By.id("securityCode")).sendKeys(resultSet.get("Security number"));
+	 
+		field = "Expiration Month";
+		xPath = "//select[@id='expiryMonth']";
+		successMessage = "ENTER  '"+ field +"' to: " +String.format("%02d", Integer.parseInt(resultSet.get("Expiry Month")));
+	    //new Select(driver.findElement(By.id("expiryMonth"))).selectByValue(String.format("%02d", c.get(Calendar.MONTH)));
+	 
+	    new Select(driver.findElement(By.id("expiryMonth"))).selectByVisibleText(String.format("%02d",  Integer.parseInt(resultSet.get("Expiry Month"))));
+//	    errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+//	    errorExist  |= !(errorMessage == null || errorMessage.isEmpty());
+//	    
+	    field = "Expiration Year";
+	    xPath = "//select[@id='expiryYear']";
+	    successMessage = "ENTER  '"+ field +"' TO : " +resultSet.get("Expiry Year");
+//	    new Select(driver.findElement(By.id("expiryYear"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
+	    new Select(driver.findElement(By.id("expiryYear"))).selectByVisibleText(resultSet.get("Expiry Year"));
+//	    errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+//	    errorExist  |= !(errorMessage == null || errorMessage.isEmpty());
+//	    
+	    field = "Security Code";
+	    xPath = "//input[@id='securityCode']";
+	    successMessage = "ENTER '"+ field +"' TO: " +resultSet.get("Security number");
+	    WebElement securityCodeElement = driver.findElement(By.id("securityCode"));
+	    securityCodeElement.clear();
+	    securityCodeElement.sendKeys(resultSet.get("Security number"));
+//	    errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+//	    errorExist  |= !(errorMessage == null || errorMessage.isEmpty());
+//	    
+	    field = "Submit";
+	    LOGGER.log(Level.INFO, "CLICK ON BUTTON '"+ field +"' \n");
+	    driver.findElement(By.id("submitButton")).click();
+	    GUILogger.raiseError(errorExist);
+	 
 	    
-	    WebElement submitElement = driver.findElement(By.id("submitButton"));
-	    jse2.executeScript("arguments[0].scrollIntoView()", submitElement); 
-	    submitElement.click();
-	    //driver.findElement(By.id("submitButton")).click();
-	    logError(driver);
-	    
-	}
-	private void login(WebDriver driver, Map<String, String> resultSet) throws GUIException {
-		driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div/div/input")).clear();
-	    driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div/div/input")).sendKeys(resultSet.get("email"));
-	    driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div[2]/div/input")).clear();
-
-	    driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div[2]/div/input")).sendKeys(resultSet.get("password").trim());
-	    //driver.findElement(By.name("dwfrm_login_login")).click();
-	    WebElement loginElement = driver.findElement(By.name("dwfrm_login_login"));
-	    jse2.executeScript("arguments[0].scrollIntoView()", loginElement); 
-	    loginElement.click();
-	    //logError(driver);
-	   
 	}
 
 	 
-	  public void tearDown() throws Exception {
-	    driver.quit();
-	    String verificationErrorString = verificationErrors.toString();
-	    if (!"".equals(verificationErrorString) || (errorMessage != null)&& !errorMessage.isEmpty()) {
-	    	LOGGER.log(Level.SEVERE, verificationErrorString);
-	    	LOGGER.log(Level.SEVERE, errorMessage);
-	        fail(verificationErrorString);
-	    	
-	    }
-	  }
+
 	private void enterUserInfo(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
 		
 		    new Select(driver.findElement(By.id("dwfrm_billing_title"))).selectByVisibleText("Miss");
@@ -378,82 +425,7 @@ public class TestSouscriptionBRMultiExcel {
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_city")).clear();
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_city")).sendKeys(resultSet.get("City"));
 		    
-		    logError(driver);
+		   
 	}
-	private String getGUIErrorHelper(WebElement element) {
-		String errorMessage = "";
-		String msg = null;
-		if (element != null){
-			msg = element.getAttribute("value") ;
-			if (msg != null){
-				errorMessage += String.join("\n", msg);
-			}
-			msg = element.getText();
-			if (msg != null){
-				errorMessage += String.join("\n", msg);
-			}
-			msg = element.getAttribute("innerHTML") ;
-			if (msg != null){
-				errorMessage += String.join("\n", msg);
-			}
-			return errorMessage;
-		}
-		return errorMessage;
-	}
-	private String getGUIError(WebDriver driver) {
-		errorMessage = "";
-		if (driver.findElements(By.xpath("//*[contains(@class, 'error')]")).size() > 0 ){
-			errorMessage += getGUIErrorHelper(driver.findElement(By.xpath("//*[contains(@class, 'error')]")) );
-		}
-		if (driver.findElements(By.xpath("//span[contains(@class, 'error')]")).size() >0){
-			errorMessage += getGUIErrorHelper(driver.findElement(By.xpath("//span[contains(@class, 'error')]")));
-		}
-		if (driver.findElements(By.xpath("//div[contains(@class, 'error')]")).size() > 0){
-			errorMessage += getGUIErrorHelper(driver.findElement(By.xpath("//div[contains(@class, 'error')]")));
-		}
-		return errorMessage;
-		}
-	public static boolean isClickable(WebElement el, WebDriver driver) 
-	{
-		try{
-			WebDriverWait wait = new WebDriverWait(driver, 10);
-			wait.until(ExpectedConditions.elementToBeClickable(el));
-			return true;
-		}
-		catch (Exception e){
-			return false;
-		}
-	}
-	  private boolean isElementPresent(By by) {
-	    try {
-	      driver.findElement(by);
-	      return true;
-	    } catch (NoSuchElementException e) {
-	      return false;
-	    }
-	  }
 
-	  private boolean isAlertPresent() {
-	    try {
-	      driver.switchTo().alert();
-	      return true;
-	    } catch (NoAlertPresentException e) {
-	      return false;
-	    }
-	  }
-
-	  private String closeAlertAndGetItsText() {
-	    try {
-	      Alert alert = driver.switchTo().alert();
-	      String alertText = alert.getText();
-	      if (acceptNextAlert) {
-	        alert.accept();
-	      } else {
-	        alert.dismiss();
-	      }
-	      return alertText;
-	    } finally {
-	      acceptNextAlert = true;
-	    }
-	  }
 }

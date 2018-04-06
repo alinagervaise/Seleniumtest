@@ -43,6 +43,7 @@ import staging.rcibsp.Country;
 import staging.rcibsp.DriverType;
 import staging.rcibsp.ExcelReader;
 import staging.rcibsp.GUIException;
+import staging.rcibsp.GUILogger;
 import staging.rcibsp.Loader;
 import staging.rcibsp.WebDriverFactory;
 
@@ -51,44 +52,29 @@ import staging.rcibsp.WebDriverFactory;
  * @author galinabikoro
  *
  */
-public class TestSouscriptionUKMultiExcel {
-	private WebDriver driver;
-	private WebDriverWait wait;
-	private final String BASE_URL = "https://staging-store-rcibsp.demandware.net";
-	private boolean acceptNextAlert = true;
-	private StringBuffer verificationErrors = new StringBuffer();
-	private java.text.SimpleDateFormat sf;
-	private Calendar c;
-	private JavascriptExecutor jse2;
-	private DesiredCapabilities capabilities;
-	 public static Logger LOGGER = Logger.getLogger(TestSouscriptionUKMultiExcel.class.getName());  
-	 public FileHandler fileHandler;  
-	 String errorMessage = "";
+public class TestSouscriptionUKMultiExcel extends TestBase implements TestInterface{
+	
 	/**
 	 * @throws java.lang.Exception
+	 * 
+	 * TODO: Elements with no ID  button "add to cart"
+	 *
 	 */
 
 
 	@Before
 	public void setUp() throws Exception {
+		 this.setProperties();
+		 this.setCaptureFile("screenshotUK");
 		
-		 driver = new WebDriverFactory().getDriver(DriverType.FIREFOX);
-		 //driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-		 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		 wait = new WebDriverWait(driver, 1);
+		 driver = new WebDriverFactory().getDriver(DriverType.FIREFOX); 
+		 //driver.manage().timeouts().implicitlyWait(ConstantUtils.IMPLICIT_WAIT_TIME, TimeUnit.MINUTES);
+		 driver.manage().timeouts().implicitlyWait(Long.parseLong(properties.getProperty("IMPLICIT_WAIT_TIME")), TimeUnit.MINUTES);
 		 sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		 c = Calendar.getInstance();
 		 jse2 = (JavascriptExecutor)driver;
-		 
-		 java.text.SimpleDateFormat sf0 = new java.text.SimpleDateFormat("dd_MM_yyyy");
-		 Date date = new Date(System.currentTimeMillis());
-		 String currentDateStr = sf0.format(date);
-		 String logFile = "errLogUK"+currentDateStr+".log";
-		 String handlerLogFile = String.join(ConstantUtils.SCREENHOT_FOLDER_PATH, logFile);
-		 fileHandler = new FileHandler( handlerLogFile, true);  
-	     LOGGER.addHandler(fileHandler);
-	     SimpleFormatter formatter = new SimpleFormatter();  
-	     fileHandler.setFormatter(formatter);
+	
+	     this.setHandler("errLogUK");
 	}
 	
 
@@ -96,13 +82,14 @@ public class TestSouscriptionUKMultiExcel {
 	  public void testCaseSouscriptionUserExist() throws IOException,ParseException, InterruptedException {
 		  
 		  try{
+			  isTestPassed = true;
 			  ExcelReader objExcelFile = new ExcelReader();
 			  
 			  Loader loader = new Loader();
 			  loader.setReader(new ExcelReader());
 			  List<Map<String, String>> result = loader.readFile(ConstantUtils.INPUT_FILE_PATH_UK, Country.UK);
-			  String infotest = "Execute "+ this.getClass().getSimpleName()+ "\n";
-			  infotest += "Reading data from file : "+ ConstantUtils.INPUT_FILE_PATH_UK +"\n";
+			  String infotest = "EXECUTE "+ this.getClass().getSimpleName()+ "\n";
+			  infotest += "READING DATA FROM FILE: "+ ConstantUtils.INPUT_FILE_PATH_UK +"\n";
 			  LOGGER.info(infotest);
 			  int count = 0;
 			  for (Map m : result){
@@ -111,340 +98,332 @@ public class TestSouscriptionUKMultiExcel {
 					  continue;
 				  }
 				  count += 1;
-				  LOGGER.info("Beginning Test :  testCaseSouscriptionUserExist \n");
+				  LOGGER.info("BEGINNING TEST: \n");
 				  LOGGER.info("for data set " + count +":"+ m +"\n");
 				  try{
 				    	runSelenium(m);
-				    	LOGGER.info("End Test :  testCaseSouscriptionUserExist \n");
-				    	LOGGER.info("for data set " + count +"\n");
+				    	LOGGER.info("END OF TEST FOR DATA SET: " + count +" SUCCESS!\n");
 				  }
 				  catch(GUIException e){
 					  if (e != null){
-				
-						  generateLog(e);
-					
-					  LOGGER.log(Level.SEVERE, e.getMessage());
-					  logout(driver);
-					  continue;
-					  }
-					  
+						  takeScreenshot(e);
+						  logout(driver);
+						  LOGGER.info("END OF TEST FOR DATE SET :" + count +" FAIL!\n");
+						  isTestPassed = false;
+						  continue;
+					  }  
 				  }
 				  catch(Exception ex){
 					  LOGGER.log(Level.SEVERE, ex.getClass().getName()+ "   "+ex.getMessage());
-					  generateLog(ex);
-				  
+					  logout(driver);
+					  continue;
 				  }
-				  
 		  }
 		  }catch(IOException ex){
-			  generateLog(ex);
+			  LOGGER.log(Level.SEVERE, ex.getClass().getName()+ "   "+ex.getMessage());
 		  }
 	   
 	  }
 
-	private void generateLog(Exception ex) throws IOException {
-		File errFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		  java.text.SimpleDateFormat sf = new java.text.SimpleDateFormat("dd_MM_yyyy_HHmmss");
-		  Date date = new Date(System.currentTimeMillis());
-		  String currentDateStr = sf.format(date);
-		  String screenshotFile = "screenshotUK"+currentDateStr+".png";
-		  String outputPath = String.join(FileSystems.getDefault().getSeparator(),
-				  							ConstantUtils.DRIVER_FOLDER_PATH,
-				  							screenshotFile);
-		  Files.copy( errFile, new File(outputPath));
-		  
+	public void runSelenium(Map<String, String> resultSet) throws ParseException, InterruptedException, GUIException {
+		driver.get(properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_UK_URL"));
+		
+		selectProduct(driver, resultSet);
+		
+		String expectedURL = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_UK_URL")
+		+ properties.getProperty("LOGIN_URL");
+		login(driver, expectedURL, resultSet);
+		expectedURL = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_UK_URL")
+						+ properties.getProperty("SHIPPING_URL");
+	    this.checkCurrentURL(driver, expectedURL, LOGGER);
+		LOGGER.log(Level.INFO, "USER "+resultSet.get("email")+ "  IS CONNECTED\n");
+	    //checkUserInfo(driver, resultSet);
+		 
+		 expectedURL = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_UK_URL")
+			+ properties.getProperty("SHIPPING_URL");
+		 this.checkCurrentURL(driver, expectedURL, LOGGER);
+	     By byBillingSave = By.xpath("//button[@name='dwfrm_billing_save']");
+
+    
+		new FluentWait<WebDriver>(driver)
+		 		    .withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+		 		    .pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
+		 		    .ignoring(WebDriverException.class)
+		 		    .until(ExpectedConditions.elementToBeClickable(byBillingSave)).click();
+		
+		expectedURL = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_UK_URL")
+		+ properties.getProperty("SUBSCRIPTION_URL");
+		this.checkCurrentURL(driver, expectedURL, LOGGER);
+	    getSouscription(driver, resultSet);
+       
+	    makePayment(driver, resultSet);
+		
+	  
+
+        expectedURL = properties.getProperty("BASE_URL") 
+        		+ properties.getProperty("COUNTRY_UK_URL")+ properties.getProperty("PAYMENT_CONFIRMATION_URL");
+	    new FluentWait<WebDriver>(driver)
+	    .withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+		.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
+	    .ignoring(WebDriverException.class)
+	    .until(ExpectedConditions.urlContains(expectedURL));
+	    
+	    LOGGER.log(Level.INFO,"PAYMENT COMPLETED WITH SUCCESS!\n");
+	
+	    logout(driver);
+	   
 	}
 
-	public void runSelenium(Map<String, String> resultSet) throws ParseException, InterruptedException, GUIException {
-		driver.get(BASE_URL + "/s/RCI_UK/");
-		
-	    //driver.findElement(By.linkText("KEY COVER")).click();
-		//By menuBy = By.cssSelector("ul.menu-category.level-1 li:nth-of-type(2) a");
-		//By menuBy = By.linkText("KEY COVER");
-		By menuBy =By.xpath("//nav[@id='navigation']/ul/li[2]/a");
+
+	public void selectProduct(WebDriver driver, Map<String, String> resultSet) throws GUIException {
+		By menuBy =By.xpath("//nav[@id='navigation']/div/ul/li[2]/a");
+//	    new FluentWait<WebDriver>(driver)
+//	    .withTimeout(1, TimeUnit.MINUTES)
+//	    .pollingEvery(5, TimeUnit.SECONDS)
+//	    .ignoring(WebDriverException.class)
+//	    .until(ExpectedConditions.and(
+//	    		ExpectedConditions.visibilityOfElementLocated(menuBy),
+//	    		ExpectedConditions.elementToBeClickable(menuBy)
+//	    		));
 	    new FluentWait<WebDriver>(driver)
-	    .withTimeout(1, TimeUnit.MINUTES)
-	    .pollingEvery(5, TimeUnit.SECONDS)
+	    .withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+	    .pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
 	    .ignoring(WebDriverException.class)
 	    .until(ExpectedConditions.and(
 	    		ExpectedConditions.visibilityOfElementLocated(menuBy),
 	    		ExpectedConditions.elementToBeClickable(menuBy)
 	    		));
+	  
 	    WebElement menuProductElement = driver.findElement(menuBy);
 	    menuProductElement.click();
-	    driver.findElement(By.cssSelector("button.add-all-to-cart.product-0")).click();
-	    driver.findElement(By.cssSelector("a.action.dialog-cart-show")).click();
-	    driver.findElement(By.xpath("(//form[@id='checkout-form']/fieldset/button)[2]")).click();
-	    
-	    login(driver, resultSet);
-	    
-	    String URL = driver.getCurrentUrl();
-	    if (URL.equalsIgnoreCase("https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping")){
-	    	//user who never made a suscription
-	    	enterUserInfo(driver, resultSet);
-	    }
-	   
-	    wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[name=\"dwfrm_billing_save\"]"))).click();
-	    getSouscription(driver, resultSet);
-
-	    makePayment(driver, resultSet);
-		
-	    WebElement el = driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i"));
-
-
-	    new FluentWait<WebDriver>(driver)
-	    .withTimeout(3, TimeUnit.MINUTES)
-	    .pollingEvery(5, TimeUnit.SECONDS)
-	    .ignoring(WebDriverException.class)
-	    .until(ExpectedConditions.urlToBe("https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed"));
-	    
-	    LOGGER.log(Level.INFO,"Payment Completed successfully\n");
-	    LOGGER.log(Level.INFO,"Try to logout the user. To start a new set of data \n");
-	    logout(driver);
-	   
-	}
-	private void logout(WebDriver driver) {
-		 driver.findElement(By.xpath("//div[@class='header-banner-right']/ul/li/a/i")).click();
-		 //if (driver.findElement(By.linkText("KEY COVER")) != null){
-		 new FluentWait<WebDriver>(driver)
-		    .withTimeout(300, TimeUnit.SECONDS)
-		    .pollingEvery(2, TimeUnit.MILLISECONDS)
-		    .ignoring(WebDriverException.class)
-		    .until(ExpectedConditions.elementToBeClickable(By.linkText("MY ACCOUNT")));
-		    driver.findElement(By.linkText("MY ACCOUNT")).click();
-		    //.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='account-logout']/a")));
-		    
-		// }
-		 driver.findElement(By.xpath("//span[@class='account-logout']/a")).click();
-	
-	}
-	private void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
 	  
+	    //By agreementBy = By.xpath("//input[@class='required-for-add-to-cart']");
+	    By agreementBy = By.id("checkbox-eligibility-criteria");
+	    WebElement agreementElement = driver.findElement(agreementBy);
+	    agreementElement.click();
+	    //By agreementBy2 = By.xpath("//p/input[2]");
+	    By agreementBy2 = By.id("checkbox-read-documents");
+	    
+	    WebElement agreementElement2 = driver.findElement(agreementBy2);
+	    agreementElement2.click();
+	    //driver.findElement(By.xpath("//button[@class='add-all-to-cart product-0']")).click();
+	    driver.findElement(By.xpath("//div/button")).click();
+	    
+	    
+	    By byAddToCart = By.name("dwfrm_cart_checkoutCart");
+		 new FluentWait<WebDriver>(driver)
+		 	.withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+			.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
+		    .ignoring(WebDriverException.class)
+		    .until(ExpectedConditions.elementToBeClickable(byAddToCart));
+		LOGGER.log(Level.INFO, "PRODUCT WAS SELECTED : OK! ");
+		driver.findElement(byAddToCart).click();
+	    
+	}
+
+	
+	public void getSouscription(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
+		String errorMessage = "";
+		String successMessage = "";
+		boolean errorExist = false;
+		String field = "";
+		String xPath = "";
+		
+		//String expectedUrl = "https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription";
+		String expectedUrl = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_UK_URL")
+							+ properties.getProperty("SUBSCRIPTION_URL");
+		this.checkCurrentURL(driver, expectedUrl, LOGGER);
+	
+		
+		field = "Registration";
+		successMessage = "SET "+ field +" FIELD TO : " + resultSet.get("Registration");
+		xPath = "//*[@id='dwfrm_billing_subscriptionInformation_plate']";
 	    WebElement plateElement = driver.findElement(By.id("dwfrm_billing_subscriptionInformation_plate"));
 	    jse2.executeScript("arguments[0].scrollIntoView()", plateElement); 
 	    plateElement.clear();
 	    plateElement.sendKeys(resultSet.get("Registration"));
+	    plateElement.sendKeys(Keys.TAB);
+	    //errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	   // errorExist  |= !( errorMessage.isEmpty());
+	    
+	   
+	    field = "Brand";
+	    successMessage = "SET "+ field +" FIELD TO : " + resultSet.get("Brand").toUpperCase();
+	    xPath = "//*[@id='dwfrm_billing_subscriptionInformation_vehicleInfoBrand']";
 	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInfoBrand"))).selectByVisibleText(resultSet.get("Brand").toUpperCase());
+	    //errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	    //errorExist  |= !(errorMessage.isEmpty());
+	    
+	    field = "Model";
+	    successMessage = "SET "+ field +" FIELD TO: " + resultSet.get("Model").toUpperCase();
+	    xPath = "//*[@id='dwfrm_billing_subscriptionInformation_vehicleInfoModel']";
 	    new Select(driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInfoModel"))).selectByVisibleText(resultSet.get("Model"));
-	    
+	    //errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	    //errorExist  |= !(errorMessage.isEmpty());
 	
-	    
+	   
 	    String strCarDate = resultSet.get("Vehicle Insurance Date");
+	    field = "Vehicle insurance Date";
+	    LOGGER.log(Level.INFO, "SET "+ field +" FIELD TO: " + strCarDate+"\n");
 		Date dateVehicle =  sf.parse(strCarDate);
 	   
 	 	c.setTime(dateVehicle);
-	    WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
-	    datepicker.click();
+	 	//xPath = "//img[@class='ui-datepicker-trigger']";
+	    //WebElement datepicker = driver.findElement(By.xpath("//img[@class='ui-datepicker-trigger']"));
+	    //datepicker.click();
 	   
-	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
-	    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
-	    driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
+	    //new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
+	    //new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
+	    //driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
+	 	String subscription_date = String.join("/", String.format("%02d", c.get(Calendar.DAY_OF_MONTH))
+	 											, String.format("%02d", c.get(Calendar.MONTH))
+	 											, String.format("%04d", c.get(Calendar.YEAR)));
+	 	driver.findElement(By.id("dwfrm_billing_subscriptionInformation_vehicleInsuranceDate")).sendKeys(subscription_date);
+	 	
 	    
-	   
-		 
-		
 		By byAgreeTerms = By.name("dwfrm_billing_subscriptionInformation_agreeTerms"); 
-		
+
+		 
 		 new FluentWait<WebDriver>(driver)
-		    .withTimeout(2, TimeUnit.MINUTES)
-		    .pollingEvery(2, TimeUnit.SECONDS)
+		 	.withTimeout(Integer.parseInt(properties.getProperty("EXPLICIT_WAIT_TIME")), TimeUnit.MINUTES)
+		 	.pollingEvery(Integer.parseInt(properties.getProperty("POOLING_TIME")), TimeUnit.SECONDS)
 		    .ignoring(WebDriverException.class)
 		    .until(ExpectedConditions.elementToBeClickable(byAgreeTerms));
+		
 		 WebElement agreeTermsElment = driver.findElement(byAgreeTerms); 
+		 
+		 
+		 
 		 jse2.executeScript("arguments[0].scrollIntoView()", agreeTermsElment);
-		 //agreeTermsElment.click();
+
 		 jse2.executeScript("arguments[0].click()", agreeTermsElment);
-		 logError(driver);
+		 LOGGER.log(Level.INFO, "CLICK AGREE ON TERMS : OK!\n");
+		 GUILogger.raiseError(errorExist);
 	}
 
-	private void logError(WebDriver driver) throws GUIException {
-		String errorMessage = getGUIError(driver);
-		if ((errorMessage != null )&&(!errorMessage.isEmpty())){
-			throw new GUIException(errorMessage);
-		}
-	}
-	private void makePayment(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
-		WebElement billingSaveElment = driver.findElement(By.name("dwfrm_billing_save"));
+	
+	public void makePayment(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
+		String field = "";
+		String xPath = "";
+		String errorMessage = "";
+		String successMessage = "";
+		boolean errorExist = false;
+		
+		field = "CONTINUE TO ORDER";
+		LOGGER.log(Level.INFO, "CLICK ON BUTTON  '"+ field + "' \n");
+		xPath = "//*[@name='dwfrm_billing_save']";
+		WebElement billingSaveElment = driver.findElement(By.xpath(xPath));
 		jse2.executeScript("arguments[0].scrollIntoView()", billingSaveElment); 
 		billingSaveElment.click();
+		//String expectedURL = "https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder";
+		String expectedURL = properties.getProperty("BASE_URL") + properties.getProperty("COUNTRY_UK_URL")
+							+ properties.getProperty("PLACE_ORDER_URL");
+		this.checkCurrentURL(driver, expectedURL, LOGGER);
+		 driver.findElement(By.id("is-WorldPay")).click();
+		    
+		 WebElement placeOrderElement = driver.findElement(By.id("placeOrder"));
+		 jse2.executeScript("arguments[0].scrollIntoView()", placeOrderElement); 
+		placeOrderElement.click();
 		
-		driver.findElement(By.cssSelector("button[value=\"Continue to Place Order >\"]")).click();
-	    //driver.findElement(By.name("dwfrm_billing_save")).click();
-	    driver.findElement(By.name("dwfrm_billing_paymentMethods_selectedPaymentMethodID")).click();
 		
-		WebElement paymentMethodElment = driver.findElement(By.name("dwfrm_billing_paymentMethods_selectedPaymentMethodID"));
-		jse2.executeScript("arguments[0].scrollIntoView()", paymentMethodElment); 
-		paymentMethodElment.click();
-	    
-	    //driver.findElement(By.id("is-WorldPay")).click();
-	    driver.findElement(By.id("placeOrder")).click();
-	    driver.findElement(By.id("cardNumber")).clear();
-	    //System.out.println(""+resultSet.get("Card number"));
-	    driver.findElement(By.id("cardNumber")).sendKeys(resultSet.get("Card number"));
+	    field = "Card number";
+	    xPath = "//input[@name='cardNumber']";
+	    successMessage = "SET '"+ field +"' VALUE TO : " +resultSet.get("Card number");
+	    WebElement cardNumberElement = driver.findElement(By.name("cardNumber"));
+	    cardNumberElement.clear();
+	    cardNumberElement.sendKeys(resultSet.get("Card number"));
+	    cardNumberElement.sendKeys(Keys.RETURN);
+	    //errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	    //errorExist  |= !(errorMessage == null || errorMessage.isEmpty());
 	 
 	    String strDate = resultSet.get("Expiry date");
-		
 		Date date =  sf.parse(strDate);
-		
 		c.setTime(date);
-	    new Select(driver.findElement(By.id("expiryMonth"))).selectByValue(String.format("%02d", c.get(Calendar.MONTH)));
-	    new Select(driver.findElement(By.id("expiryYear"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
 		
-	    driver.findElement(By.id("securityCode")).clear();
-	    driver.findElement(By.id("securityCode")).sendKeys(resultSet.get("Security number"));
+		field = "Expiration Month";
+		xPath = "//select[@id='expiryMonth']";
+		successMessage = "ENTER  '"+ field +"' to: " +String.format("%02d", c.get(Calendar.MONTH));
+	    new Select(driver.findElement(By.id("expiryMonth"))).selectByValue(String.format("%02d", c.get(Calendar.MONTH)));
+	    //errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	    //errorExist  |= !(errorMessage == null || errorMessage.isEmpty());
+	    
+	    field = "Expiration Year";
+	    xPath = "//select[@id='expiryYear']";
+	    successMessage = "ENTER  '"+ field +"' TO : " +String.format("%02d", c.get(Calendar.YEAR));
+	    new Select(driver.findElement(By.id("expiryYear"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
+	    //errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	    //errorExist  |= !(errorMessage == null || errorMessage.isEmpty());
+	    
+	    field = "Security Code";
+	    xPath = "//input[@id='securityCode']";
+	    successMessage = "ENTER '"+ field +"' TO: " +resultSet.get("Security number");
+	    WebElement securityCodeElement = driver.findElement(By.id("securityCode"));
+	    securityCodeElement.clear();
+	    securityCodeElement.sendKeys(resultSet.get("Security number"));
+	    //errorMessage = GUILogger.logError(driver, xPath, field, successMessage, LOGGER);
+	    //errorExist  |= !(errorMessage == null || errorMessage.isEmpty());
+	    
+	    field = "Submit";
+	    LOGGER.log(Level.INFO, "CLICK ON BUTTON '"+ field +"' \n");
 	    driver.findElement(By.id("submitButton")).click();
-	    
-	    logError(driver);
+	    GUILogger.raiseError(errorExist);
 	    
 	}
-	private void login(WebDriver driver, Map<String, String> resultSet) throws GUIException {
-		driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div/div/input")).clear();
-	    driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div/div/input")).sendKeys(resultSet.get("email"));
-	    driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div[2]/div/input")).clear();
-
-	    driver.findElement(By.xpath("//form[@id='dwfrm_login']/fieldset/div[2]/div/input")).sendKeys(resultSet.get("password").trim());
-	    //driver.findElement(By.name("dwfrm_login_login")).click();
-	    WebElement loginElement = driver.findElement(By.name("dwfrm_login_login"));
-	    jse2.executeScript("arguments[0].scrollIntoView()", loginElement); 
-	    loginElement.click();
-	    logError(driver);
-	}
-
-	 
-	  public void tearDown() throws Exception {
-	    driver.quit();
-	    String verificationErrorString = verificationErrors.toString();
-	    if (!"".equals(verificationErrorString) || (errorMessage != null)&& !errorMessage.isEmpty()) {
-	    	LOGGER.log(Level.SEVERE, verificationErrorString);
-	    	LOGGER.log(Level.SEVERE, errorMessage);
-	        fail(verificationErrorString);
-	    	
-	    }
-	  }
-	private void enterUserInfo(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
-			//driver.findElement(By.id("dwfrm_login_username_d0pqphmpixou")).clear();
-		    //driver.findElement(By.id("dwfrm_login_username_d0pqphmpixou")).sendKeys(resultSet.get("email"));
-		    //driver.findElement(By.id("dwfrm_login_password_d0dopecnhtzp")).clear();
-		    //driver.findElement(By.id("dwfrm_login_password_d0dopecnhtzp")).sendKeys(resultSet.get("password"));
-		   // driver.findElement(By.name("dwfrm_login_login")).click();
+	
+	
+	
+	
+	private void checkUserInfo(WebDriver driver, Map<String, String> resultSet) throws ParseException, GUIException{
+			String actualValue = "";
+			String errorMessage= "FAIL TO FILL FIELD : ";
+			String field;
 		    new Select(driver.findElement(By.id("dwfrm_billing_title"))).selectByVisibleText("Miss");
 		    
-		    
-		    //driver.findElement(By.cssSelector("img.ui-datepicker-trigger")).click();
-		    //driver.findElement(By.linkText("2")).click();
 		    java.text.SimpleDateFormat sf = new java.text.SimpleDateFormat("EEE, MM dd HH:mm:ss yyyy");
 		    Calendar c = Calendar.getInstance();
 		    
+		    field = "Date of birth";
 		    String strCarDate = resultSet.get("date of birth");
-		    //System.out.println("date of birth"+strCarDate);
 			Date dateVehicle =  sf.parse(strCarDate);
-			// System.out.println("date of birth"+dateVehicle +"   type "+dateVehicle.getClass().getTypeName());
 		 	c.setTime(dateVehicle);
-		 	
-		 	//driver.findElement(By.name("dwfrm_billing_billingAddress_addressFields_birthday")).click();
-		 	// System.out.println("date of birth"+strCarDate);
 		    WebElement datepicker = driver.findElement(By.cssSelector("img.ui-datepicker-trigger"));
-		    //JavascriptExecutor jse2 = (JavascriptExecutor)driver;
-			jse2.executeScript("arguments[0].scrollIntoView()", datepicker);
-		    datepicker.click();
-		    
-		    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-year"))).selectByValue(Integer.toString(c.get(Calendar.YEAR)));
-		    new Select(driver.findElement(By.cssSelector("select.ui-datepicker-month"))).selectByValue(Integer.toString(c.get(Calendar.MONTH)));
-		    wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText(""+c.get(Calendar.DATE))));
-		    driver.findElement(By.linkText(""+c.get(Calendar.DATE))).click();
 		   
+			jse2.executeScript("arguments[0].scrollIntoView()", datepicker);
+		   
+		    String value = String.format("%02d",c.get(Calendar.DATE))+"-"
+		    				+String.format("%02d",c.get(Calendar.MONTH))+"-"
+		    				+Integer.toString(c.get(Calendar.YEAR));
 
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_mobilephone")).clear();
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_mobilephone")).sendKeys(resultSet.get("phone number"));
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address1")).clear();
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address1")).sendKeys(resultSet.get("Property number / Name"));
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address2")).clear();
+		    String xPath = "//input[@id='dwfrm_billing_billingAddress_addressFields_birthday']";
+            String dateOfBirth = driver.findElement(By.xpath(xPath)).getText();
+            Assert.assertEquals(errorMessage+field, value, dateOfBirth);
+            
+		    field = "Mobilephone";
+		    actualValue = driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_mobilephone")).getText();
+		    Assert.assertEquals(errorMessage+field, resultSet.get("phone number"), actualValue);
+		    
+		    field ="Address 1";
+		    actualValue = driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address1")).getText();
+		    Assert.assertEquals(errorMessage+field, resultSet.get("Property number / Name"), actualValue);
+		    
+		    field ="Address 2";
 		    WebElement streetElement = driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_address2"));
 		    jse2.executeScript("arguments[0].scrollIntoView()", streetElement);
-		    streetElement.sendKeys(resultSet.get("Street"));
+		    actualValue = streetElement .getText();
+		    Assert.assertEquals(errorMessage+field, resultSet.get("Street"), actualValue);
+		    
+		    
 		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_postal")).clear();
 		    WebElement postalCodeElement = driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_postal"));
 		    jse2.executeScript("arguments[0].scrollIntoView()", postalCodeElement);
 		    postalCodeElement.sendKeys(resultSet.get("Postal Code"));
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_city")).clear();
-		    driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_city")).sendKeys(resultSet.get("City"));
 		    
-		    logError(driver);
+		    
+		    field = "city";
+		    actualValue = driver.findElement(By.id("dwfrm_billing_billingAddress_addressFields_city")).getText();
+		    Assert.assertEquals(errorMessage+field, resultSet.get("City"), actualValue);
+		  
 	}
-	private String getGUIErrorHelper(WebElement element) {
-		String errorMessage = "";
-		String msg = null;
-		if (element != null){
-			msg = element.getAttribute("value") ;
-			if (msg != null){
-				errorMessage += String.join("\n", msg);
-			}
-			msg = element.getText();
-			if (msg != null){
-				errorMessage += String.join("\n", msg);
-			}
-			msg = element.getAttribute("innerHTML") ;
-			if (msg != null){
-				errorMessage += String.join("\n", msg);
-			}
-			return errorMessage;
-		}
-		return errorMessage;
-	}
-	private String getGUIError(WebDriver driver) {
-		errorMessage = "";
-		if (driver.findElements(By.xpath("//*[contains(@class, 'error')]")).size() > 0 ){
-			errorMessage += getGUIErrorHelper(driver.findElement(By.xpath("//*[contains(@class, 'error')]")) );
-		}
-		if (driver.findElements(By.xpath("//span[contains(@class, 'error')]")).size() >0){
-			errorMessage += getGUIErrorHelper(driver.findElement(By.xpath("//span[contains(@class, 'error')]")));
-		}
-		if (driver.findElements(By.xpath("//div[contains(@class, 'error')]")).size() > 0){
-			errorMessage += getGUIErrorHelper(driver.findElement(By.xpath("//div[contains(@class, 'error')]")));
-		}
-		return errorMessage;
-		}
-	public static boolean isClickable(WebElement el, WebDriver driver) 
-	{
-		try{
-			WebDriverWait wait = new WebDriverWait(driver, 10);
-			wait.until(ExpectedConditions.elementToBeClickable(el));
-			return true;
-		}
-		catch (Exception e){
-			return false;
-		}
-	}
-	  private boolean isElementPresent(By by) {
-	    try {
-	      driver.findElement(by);
-	      return true;
-	    } catch (NoSuchElementException e) {
-	      return false;
-	    }
-	  }
 
-	  private boolean isAlertPresent() {
-	    try {
-	      driver.switchTo().alert();
-	      return true;
-	    } catch (NoAlertPresentException e) {
-	      return false;
-	    }
-	  }
 
-	  private String closeAlertAndGetItsText() {
-	    try {
-	      Alert alert = driver.switchTo().alert();
-	      String alertText = alert.getText();
-	      if (acceptNextAlert) {
-	        alert.accept();
-	      } else {
-	        alert.dismiss();
-	      }
-	      return alertText;
-	    } finally {
-	      acceptNextAlert = true;
-	    }
-	  }
 }

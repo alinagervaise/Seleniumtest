@@ -1937,3 +1937,415 @@ jQuery
   init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1515665636178/lib/formValidations.js:1)
   (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1515665636178/lib/formValidations.js:1)
 [ERROR - 2018-01-23T10:40:14.909Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1516704014892
+[ERROR - 2018-01-25T09:58:52.935Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T09:58:52.972Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/:793)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/:820)
+[ERROR - 2018-01-25T09:58:53.077Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:58:53.077Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T09:58:56.785Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T09:58:56.785Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  init (http://staging-store-rcibsp.demandware.net/s/RCI_UK/UK-P-KEYCOVER.html:1102)
+  triggerInit (http://staging-store-rcibsp.demandware.net/s/RCI_UK/UK-P-KEYCOVER.html:1129)
+[ERROR - 2018-01-25T09:58:57.038Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:58:57.039Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T09:58:59.003Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T09:58:59.004Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/cart:1170)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/cart:1197)
+[ERROR - 2018-01-25T09:59:03.115Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:59:03.116Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T09:59:04.007Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T09:59:04.007Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping:985)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping:1012)
+[ERROR - 2018-01-25T09:59:04.097Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:59:04.097Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T09:59:06.508Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T09:59:06.509Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping:1428)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping:1455)
+[ERROR - 2018-01-25T09:59:06.554Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:59:06.554Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T09:59:09.347Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T09:59:09.347Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription:1455)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription:1482)
+[ERROR - 2018-01-25T09:59:09.409Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:59:09.409Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T09:59:11.771Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: count
+[ERROR - 2018-01-25T09:59:11.772Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/payment:1372)
+[ERROR - 2018-01-25T09:59:11.818Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:59:11.818Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T09:59:12.402Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T09:59:12.402Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder:1234)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder:1261)
+[ERROR - 2018-01-25T09:59:12.444Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:59:12.445Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T09:59:13.290Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T09:59:13.291Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmation:728)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmation:755)
+[ERROR - 2018-01-25T09:59:13.339Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T09:59:13.339Z] Session [578bde60-01b6-11e8-a2fa-59989feacfbd] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:05:13.651Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1516874713599
+jQuery
+[ERROR - 2018-01-25T10:00:45.924Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/:793)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/:820)
+[ERROR - 2018-01-25T10:00:46.053Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:00:46.054Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:00:47.253Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:00:47.254Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - stack:
+  init (http://staging-store-rcibsp.demandware.net/s/RCI_UK/UK-P-KEYCOVER.html:1102)
+  triggerInit (http://staging-store-rcibsp.demandware.net/s/RCI_UK/UK-P-KEYCOVER.html:1129)
+[ERROR - 2018-01-25T10:00:47.345Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:00:47.346Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - stack:
+  error (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:00:49.064Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:00:49.064Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/cart:820)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/cart:847)
+[ERROR - 2018-01-25T10:00:49.113Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:00:49.114Z] Session [9af7d910-01b6-11e8-a00a-b92cb94b4ec3] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:24:56.811Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1516875891125
+[ERROR - 2018-01-25T10:25:21.224Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:21.224Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/:793)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/:820)
+[ERROR - 2018-01-25T10:25:21.337Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:21.337Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:23.953Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:23.954Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (http://staging-store-rcibsp.demandware.net/s/RCI_UK/UK-P-KEYCOVER.html:1102)
+  triggerInit (http://staging-store-rcibsp.demandware.net/s/RCI_UK/UK-P-KEYCOVER.html:1129)
+[ERROR - 2018-01-25T10:25:24.123Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:24.123Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:26.271Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:26.271Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/cart:1170)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/cart:1197)
+[ERROR - 2018-01-25T10:25:28.484Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:28.484Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:29.761Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:29.761Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping:985)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Fshipping:1012)
+[ERROR - 2018-01-25T10:25:29.809Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:29.809Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:31.654Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:31.654Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping:1428)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/shipping:1455)
+[ERROR - 2018-01-25T10:25:31.699Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:31.699Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:34.341Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:34.341Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription:1455)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/subscription:1482)
+[ERROR - 2018-01-25T10:25:34.386Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:34.386Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:36.668Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: count
+[ERROR - 2018-01-25T10:25:36.668Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/payment:1372)
+[ERROR - 2018-01-25T10:25:36.715Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:36.715Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:37.303Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:37.304Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder:1234)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/placeorder:1261)
+[ERROR - 2018-01-25T10:25:37.387Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:37.387Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:42.291Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: count
+[ERROR - 2018-01-25T10:25:42.292Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/confirmationorder?order_token=wGtwEhMnOJt7l4lfA_VQFyNGKrxqgqIi9TD8OaPKH2k&orderKey=RCIBANK%5EBSPUKKEYCOVER%5EGBSTAGING00010020&paymentStatus=AUTHORISED&paymentAmount=2999&paymentCurrency=GBP&mac=91d77eb2cda0da10166c401c45549d68:833)
+[ERROR - 2018-01-25T10:25:42.351Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:42.352Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:42.544Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: count
+[ERROR - 2018-01-25T10:25:42.544Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/confirmationorder?order_token=wGtwEhMnOJt7l4lfA_VQFyNGKrxqgqIi9TD8OaPKH2k&orderKey=RCIBANK%5EBSPUKKEYCOVER%5EGBSTAGING00010020&paymentStatus=AUTHORISED&paymentAmount=2999&paymentCurrency=GBP&mac=91d77eb2cda0da10166c401c45549d68:833)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/s/RCI_UK/confirmationorder?order_token=wGtwEhMnOJt7l4lfA_VQFyNGKrxqgqIi9TD8OaPKH2k&orderKey=RCIBANK%5EBSPUKKEYCOVER%5EGBSTAGING00010020&paymentStatus=AUTHORISED&paymentAmount=2999&paymentCurrency=GBP&mac=91d77eb2cda0da10166c401c45549d68:832)
+[ERROR - 2018-01-25T10:25:44.361Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: count
+[ERROR - 2018-01-25T10:25:44.361Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed:1110)
+[ERROR - 2018-01-25T10:25:44.416Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:44.417Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:44.615Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: count
+[ERROR - 2018-01-25T10:25:44.616Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed:1110)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/s/RCI_UK/orderconfirmed:1109)
+[ERROR - 2018-01-25T10:25:44.708Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:44.709Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/account:810)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/account:837)
+[ERROR - 2018-01-25T10:25:44.750Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:44.750Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:45.485Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:45.485Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Faccount:877)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/login?original=%2Fs%2FRCI_UK%2Faccount:904)
+[ERROR - 2018-01-25T10:25:45.526Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:45.526Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:45.983Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:45.984Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/:793)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/:820)
+[ERROR - 2018-01-25T10:25:46.030Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:46.030Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:47.789Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:47.790Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (http://staging-store-rcibsp.demandware.net/s/RCI_UK/UK-P-KEYCOVER.html:1102)
+  triggerInit (http://staging-store-rcibsp.demandware.net/s/RCI_UK/UK-P-KEYCOVER.html:1129)
+[ERROR - 2018-01-25T10:25:47.901Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:47.902Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (http://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:25:48.862Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: ReferenceError: Can't find variable: jQuery
+[ERROR - 2018-01-25T10:25:48.862Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  init (https://staging-store-rcibsp.demandware.net/s/RCI_UK/cart:820)
+  triggerInit (https://staging-store-rcibsp.demandware.net/s/RCI_UK/cart:847)
+[ERROR - 2018-01-25T10:25:48.913Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - msg: Error: Syntax error, unrecognized expression: input[name$='personalInfo_personalInfoFields_birthday'
+[ERROR - 2018-01-25T10:25:48.913Z] Session [08222380-01ba-11e8-8d6f-67118803db14] - page.onError - stack:
+  error (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  tokenize (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  select (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  b (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  find (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:2)
+  _ (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/jquery/jquery-2.1.1.min.js:1)
+  init (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+  (anonymous function) (https://staging-store-rcibsp.demandware.net/on/demandware.static/Sites-RCI_UK-Site/-/en_GB/v1516706487619/lib/formValidations.js:1)
+[ERROR - 2018-01-25T10:49:49.908Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1516877389880

@@ -49,14 +49,19 @@ public  class ConstantUtils {
 
 	public final static String IE_DRIVER_PATH_LINUX ="";
 	public final static String FIREFOX_DRIVER_PATH_LINUX = String.join(FileSystems.getDefault().getSeparator(),
-										System.getProperty("user.dir"),
-										"src","SELENIUM_DRIVERS", 
-										"geckodriver-v0.19.1-linux64", "geckodriver");
+										"usr", "bin","geckodriver");
 
 	public final static String CHROME_DRIVER_PATH_LINUX  = String.join(FileSystems.getDefault().getSeparator(),
-					System.getProperty("user.dir"),
-					"src","SELENIUM_DRIVERS", 
-					"chromedriver_linux64", "chromedriver");
+										"usr", "bin","chromedriver");
+	public final static String FIREFOXPATH_59 = String.join(FileSystems.getDefault().getSeparator(),
+							"C:", "Program Files (x86)","Mozilla Firefox", "firefox.exe");
+	public final static String FIREFOXPATH = String.join(FileSystems.getDefault().getSeparator(),
+			"C:", "Firefox", "firefox.exe");
+	
+	public final static int IMPLICIT_WAIT_TIME = 2;
+	public final static String CONFIG_PATH = String.join(FileSystems.getDefault().getSeparator(),
+									System.getProperty("user.dir"), "configuration.properties");
+
 
 
 }

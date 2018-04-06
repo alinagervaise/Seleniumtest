@@ -1,0 +1,93 @@
+mars 27, 2018 1:59:28 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+mars 27, 2018 1:59:28 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 1:59:28 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+mars 27, 2018 2:01:38 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.StaleElementReferenceException   Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 0 milliseconds
+mars 27, 2018 2:01:38 PM test.TestSouscriptionBRMultiExcel removeProduct
+INFOS: ATTEMPT TO REMOVE PRODUCT 
+
+mars 27, 2018 2:05:48 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+mars 27, 2018 2:05:48 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 2:05:48 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+mars 27, 2018 2:07:41 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.StaleElementReferenceException   Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 0 milliseconds
+mars 27, 2018 2:07:41 PM test.TestSouscriptionBRMultiExcel removeProduct
+INFOS: ATTEMPT TO REMOVE PRODUCT 
+
+mars 27, 2018 2:10:20 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+mars 27, 2018 2:10:20 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 2:10:20 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+mars 27, 2018 2:12:28 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.StaleElementReferenceException   Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 0 milliseconds
+mars 27, 2018 2:12:28 PM test.TestSouscriptionBRMultiExcel removeProduct
+INFOS: ATTEMPT TO REMOVE PRODUCT 
+
+mars 27, 2018 2:16:32 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+mars 27, 2018 2:16:32 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 27, 2018 2:16:32 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+mars 27, 2018 2:16:47 PM test.TestSouscriptionBRMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+mars 27, 2018 2:16:49 PM test.TestSouscriptionBRMultiExcel login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_BR/login?original=%2Fs%2FRCI_BR%2Fshipping%3Flang%3Dpt_BR&lang=pt_BR
+
+mars 27, 2018 2:20:49 PM staging.rcibsp.GUILogger logError
+INFOS: SET  'Username' VALUE TO : javierdomingo@mailinator.com: OK! 
+
+mars 27, 2018 2:24:50 PM staging.rcibsp.GUILogger logError
+INFOS: SET 'Password' VALUE TO: riCo&903: OK! 
+
+mars 27, 2018 2:24:53 PM test.TestSouscriptionBRMultiExcel login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+mars 27, 2018 2:24:53 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_BR/shipping
+
+mars 27, 2018 2:24:53 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+mars 27, 2018 2:24:53 PM test.TestSouscriptionBRMultiExcel login
+INFOS: USER javierdomingo@mailinator.com  IS CONNECTED
+
+mars 27, 2018 2:24:55 PM staging.rcibsp.GUILogger logError
+INFOS: SET VIN FIELD TO : JY4AM13W1BC017937: OK! 
+
+mars 27, 2018 2:24:56 PM staging.rcibsp.GUILogger logError
+INFOS: SET Registration number FIELD TO : SBA I234: OK! 
+
+mars 27, 2018 2:24:58 PM test.TestSouscriptionBRMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+mars 27, 2018 2:24:58 PM test.TestSouscriptionBRMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+

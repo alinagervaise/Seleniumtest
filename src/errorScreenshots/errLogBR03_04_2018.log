@@ -1,0 +1,232 @@
+avr. 03, 2018 5:06:55 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:06:55 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:06:55 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:08:05 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:33798 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+avr. 03, 2018 5:08:05 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 03, 2018 5:08:07 PM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTorg.apache.http.conn.HttpHostConnectException: Connect to localhost:33798 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver 
+
+avr. 03, 2018 5:08:07 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 03, 2018 5:08:37 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:08:37 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:08:37 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:10:49 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.TimeoutException   Expected condition failed: waiting for element to be clickable: By.id: actionlink (tried for 120 second(s) with 5 SECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+avr. 03, 2018 5:10:49 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 03, 2018 5:11:07 PM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTorg.apache.http.conn.HttpHostConnectException: Connect to localhost:19481 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver 
+
+avr. 03, 2018 5:11:07 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 03, 2018 5:11:29 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:11:29 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:11:29 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:12:09 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:12:09 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:12:09 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:14:18 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.StaleElementReferenceException   Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 0 milliseconds
+avr. 03, 2018 5:14:18 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 03, 2018 5:16:03 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:16:03 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:16:03 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:17:03 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:17:03 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:17:03 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=lun., 01 01 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:18:23 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:18:23 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:18:23 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=mer., 03 28 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:18:38 PM test.TestSouscriptionBRMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 03, 2018 5:18:41 PM test.TestSouscriptionBRMultiExcel login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_BR/login?original=%2Fs%2FRCI_BR%2Fshipping%3Flang%3Dpt_BR&lang=pt_BR
+
+avr. 03, 2018 5:22:41 PM staging.rcibsp.GUILogger logError
+INFOS: SET  'Username' VALUE TO : javierdomingo@mailinator.com: OK! 
+
+avr. 03, 2018 5:26:42 PM staging.rcibsp.GUILogger logError
+INFOS: SET 'Password' VALUE TO: riCo&903: OK! 
+
+avr. 03, 2018 5:26:45 PM test.TestSouscriptionBRMultiExcel login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 03, 2018 5:26:45 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_BR/shipping
+
+avr. 03, 2018 5:26:45 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 03, 2018 5:26:45 PM test.TestSouscriptionBRMultiExcel login
+INFOS: USER javierdomingo@mailinator.com  IS CONNECTED
+
+avr. 03, 2018 5:26:47 PM staging.rcibsp.GUILogger logError
+INFOS: SET VIN FIELD TO : JY4AM13W1BC017937: OK! 
+
+avr. 03, 2018 5:26:48 PM staging.rcibsp.GUILogger logError
+INFOS: SET Registration number FIELD TO : SBA I234: OK! 
+
+avr. 03, 2018 5:26:50 PM test.TestSouscriptionBRMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 03, 2018 5:26:50 PM test.TestSouscriptionBRMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 03, 2018 5:32:22 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:32:22 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:32:22 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=mer., 03 28 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:33:59 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.WebDriverException   org.apache.http.conn.HttpHostConnectException: Connect to localhost:32932 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+avr. 03, 2018 5:33:59 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 03, 2018 5:34:01 PM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTorg.apache.http.conn.HttpHostConnectException: Connect to localhost:32932 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver 
+
+avr. 03, 2018 5:34:01 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+avr. 03, 2018 5:34:45 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionBRMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_BR.xlsx
+
+avr. 03, 2018 5:34:45 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+avr. 03, 2018 5:34:45 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{home phone=6132223990, birthday=mar., 03 12 00:00:00 1985, Expiry Year=2021, firstname=Domingo, Card number=4917610000000000, Car registration date=mer., 03 28 00:00:00 2018, Security number=789, password=riCo&903, Street=la casa de palma, email=javierdomingo@mailinator.com, Actual Mileage=5000, Street Number=3, Etat=Brasil, Registration number=SBA I234, confirm password=riCo&903, City=Bresilia, Souscription duration=2 anos, Mileage covered=40 000 km, lastname=Javier, CEP=86041230, Neighborhood=Amazonas, mobile phone=6232223999, CPF=632.374.968-80, Model=KWID 1.0, Country=Lebon, VIN=JY4AM13W1BC017937, status=Solteiro/a, Expiry Month=5}
+
+avr. 03, 2018 5:34:57 PM test.TestSouscriptionBRMultiExcel selectProduct
+INFOS: PRODUCT WAS SELECTED : OK! 
+avr. 03, 2018 5:35:00 PM test.TestSouscriptionBRMultiExcel login
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_BR/login?original=%2Fs%2FRCI_BR%2Fshipping%3Flang%3Dpt_BR&lang=pt_BR
+
+avr. 03, 2018 5:39:00 PM staging.rcibsp.GUILogger logError
+INFOS: SET  'Username' VALUE TO : javierdomingo@mailinator.com: OK! 
+
+avr. 03, 2018 5:43:00 PM staging.rcibsp.GUILogger logError
+INFOS: SET 'Password' VALUE TO: riCo&903: OK! 
+
+avr. 03, 2018 5:43:04 PM test.TestSouscriptionBRMultiExcel login
+INFOS: CLICK ON BUTTON 'Login'OK! 
+
+avr. 03, 2018 5:43:04 PM test.TestBase checkCurrentURL
+INFOS: NOW ON PAGE:https://staging-store-rcibsp.demandware.net/s/RCI_BR/shipping
+
+avr. 03, 2018 5:43:04 PM test.TestBase checkCurrentURL
+INFOS: URL OK
+
+avr. 03, 2018 5:43:04 PM test.TestSouscriptionBRMultiExcel login
+INFOS: USER javierdomingo@mailinator.com  IS CONNECTED
+
+avr. 03, 2018 5:43:07 PM staging.rcibsp.GUILogger logError
+INFOS: SET VIN FIELD TO : JY4AM13W1BC017937: OK! 
+
+avr. 03, 2018 5:43:08 PM staging.rcibsp.GUILogger logError
+INFOS: SET Registration number FIELD TO : SBA I234: OK! 
+
+avr. 03, 2018 5:43:11 PM test.TestSouscriptionBRMultiExcel getSouscription
+INFOS: CLICK AGREE ON TERMS : OK!
+
+avr. 03, 2018 5:43:11 PM test.TestSouscriptionBRMultiExcel makePayment
+INFOS: CLICK ON BUTTON  'CONTINUE TO ORDER' 
+
+avr. 03, 2018 5:47:14 PM staging.rcibsp.GUILogger logError
+INFOS: SET 'Card number' VALUE TO : 4917610000000000: OK! 
+
+avr. 03, 2018 5:47:14 PM test.TestSouscriptionBRMultiExcel testCaseSouscriptionUserExist
+GRAVE: java.lang.NullPointerException   null
+avr. 03, 2018 5:47:14 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+avr. 03, 2018 5:49:14 PM test.TestBase logout
+INFOS: FAIL TO REMOVE PRODUCTUnable to locate element: {"method":"xpath","selector":"//div[@id='mini-cart']"}
+Command duration or timeout: 0 milliseconds 
+
+avr. 03, 2018 5:49:14 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+

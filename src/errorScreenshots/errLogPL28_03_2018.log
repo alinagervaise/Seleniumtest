@@ -1,0 +1,47 @@
+mars 28, 2018 5:47:39 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+mars 28, 2018 5:47:39 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 28, 2018 5:47:39 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 28, 2018 5:49:47 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"css selector","selector":"#ui-id-2 > div.actions > a.action.dialog-cart-show"}
+Command duration or timeout: 0 milliseconds
+mars 28, 2018 5:49:47 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+mars 28, 2018 5:49:50 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+mars 28, 2018 5:49:56 PM test.TestBase logout
+INFOS: LOG OUT : OK
+
+mars 28, 2018 5:55:00 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: EXECUTE TestSouscriptionPLMultiExcel
+READING DATA FROM FILE: C:\Users\galinabikono\workspace\gitlab\src\excelExportAndFileIO\jeu_de_test_PL.xlsx
+
+mars 28, 2018 5:55:00 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: BEGINNING TEST: 
+
+mars 28, 2018 5:55:00 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: for data set 1:{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 28, 2018 5:57:09 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"css selector","selector":"#ui-id-2 > div.actions > a.action.dialog-cart-show"}
+Command duration or timeout: 0 milliseconds
+mars 28, 2018 5:57:09 PM test.TestBase removeProduct
+INFOS: APTEMPT TO REMOVE PRODUCT 
+
+mars 28, 2018 5:57:13 PM test.TestBase removeProduct
+INFOS: REMOVE PRODUCT DONE : OK
+
+mars 28, 2018 5:57:13 PM test.TestBase logout
+INFOS: ATTEMPT TO LOGOUT THE CURRENT USER 
+
+mars 28, 2018 5:57:15 PM test.TestBase logout
+INFOS: LOG OUT : OK
+

@@ -1,0 +1,27 @@
+mars 23, 2018 4:23:41 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 23, 2018 4:25:15 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 23, 2018 4:27:20 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"css selector","selector":"button.add-all-to-cart.product-UBEZPIECZENIEOPON-Maxi"}
+Command duration or timeout: 0 milliseconds
+mars 23, 2018 4:55:13 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 23, 2018 4:56:22 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.TimeoutException   Expected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on WINDOWS (d3a3d517-e8f5-4013-945c-3141922988f2)] -> xpath: //nav[@id='navigation']/div/ul/li[2]/div/ul/li[4]/a] (tried for 60 second(s) with 2 SECONDS interval)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'CSCFRAAG971566', ip: '10.3.7.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: driver.version: unknown
+mars 23, 2018 4:58:44 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+INFOS: Execute Souscription for :
+{birthday=jeu., 05 30 00:00:00 1963, home phone=123675345, Expiry Year=2020, firstname=Jeanne, Postal Code=99345, Registration number=978XKO, Card number=4917610000000000, confirm password=Koco-275, City=Varsovie, Security number=657, lastname=Delaure, password=Koco-275, Manufacturing Year=2014, Pesel=63053018206, Vehicle Insurance Date=ven., 02 16 00:00:00 2018, Date first registration=ven., 01 08 00:00:00 2016, Model=Maestro, Street=5 rue du moulin, VIN=1G11C5SL7EF187735, brand=AUSTIN, email=jeannedelaure@mailinator.com, Street Number=5, Expiry Month=9}
+
+mars 23, 2018 5:02:09 PM test.TestSouscriptionPLMultiExcel testCaseSouscriptionUserExist
+GRAVE: org.openqa.selenium.NoSuchElementException   Unable to locate element: {"method":"css selector","selector":"#ui-id-2 > div.actions > a.action.dialog-cart-show"}
+Command duration or timeout: 0 milliseconds
